@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node build/dev.js --NODE_ENV=dev",
     "test": "karma start",
-    "build": "rm -rf dist/* && node app/build/build.js --NODE_ENV=production"
+    "build": "rm -rf dist/* && node build/build.js --NODE_ENV=production"
   },
   "license": "MIT",
   "dependencies": {
