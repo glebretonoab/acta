@@ -1,0 +1,19 @@
+.skin-acta {    
+    .modal {
+        .modal-header, .modal-footer {
+            padding: 10px 15px;
+        }
+
+        .modal-header {
+            h4 {
+                font-weight: 600;
+            }
+        }
+
+        .modal-body {
+            .select2 {
+                width: 100% !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+// _mixins.scss
+@mixin circle($size: 100px) {
+	width: $size;
+	height: $size;
+	position: relative;
+	-webkit-border-radius: $size / 2 + 0px;
+	-moz-border-radius: $size / 2 + 0px;
+	border-radius: $size / 2 + 0px;
+	&>div,
+	span {
+		width: $size - $size*0.3;
+		height: $size - $size*0.3;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+@mixin status-color($color) {
+	.main-header {
+		.navbar-custom-menu {
+			.navbar-nav {
+				a.exit {
+					color: $color;
+				}
+			}
+		}
+	}
+	.sidebar-menu {
+		>li.active {
+			>a {
+				border-left-color: $color;
+				i {
+					color: $color;
+				}
+			}
+		}
+		>li {
+			>a {
+				i {
+					color: $color;
+				}
+			}
+		}
+	}
+	.user-panel {
+		background-color: $color;
+	}
+	.content-wrapper {
+		.content-header {
+			.sidebar-toggle {
+				background-color: $color;
+			}
+		}
+
+		.content {
+			padding: 25px 40px;
+
+			home {
+				.pad {
+					padding: 0;
+					margin: 0;
+
+					.info-box {
+						background-color: #f9f9f9;
+						
+						.info-box-icon {
+							background-color: $color !important;
+						}
+
+						.info-box-content {
+							padding: 12px 10px;
+						}
+					}
+				}
+
+				.box-acta {
+					border-top-color: $color;
+				}
+			}
+
+			h3.acta-title {
+				border-left: 8px solid $color;
+			}
+
+			.nav-tabs-custom {
+				>.nav-tabs {
+					>li.active {
+						border-top: 4px solid $color;
+					}
+				}
+			}
+		}
+	}
+}

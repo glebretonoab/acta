@@ -1,0 +1,19 @@
+.skin-acta {
+    .login-box {
+        width: 615px;
+        background: url('../images/login-background.png') no-repeat;
+        min-height: 169px;
+        padding-left: 143px;
+        padding-top: 75px;
+        margin: 10% auto;
+
+        .login-box-body {
+            background: none;
+
+            .btn-submit {
+                background-color: #1e282c;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

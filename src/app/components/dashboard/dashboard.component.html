@@ -1,0 +1,463 @@
+<div class="wrapper wrapper-{{ status.shortcut }}">
+
+	<!-- Main Header -->
+	<header class="main-header">
+
+		<!-- Logo -->
+		<a href="/" class="logo-acta">
+			<span class="firstelement">Acta</span>
+			<span class="secondelement">UNI Fournisseur Dev</span>
+			<span class="thirdelement">AUTOMATION CALLS, TRACES & ANALYSES</span>
+		</a>
+
+		<!-- Header Navbar -->
+		<nav class="navbar navbar-static-top" role="navigation">
+
+			<!-- Navbar Right Menu -->
+			<div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#">
+							<i class="material-icons">fullscreen_exit</i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="exit">
+							<i class="material-icons">exit_to_app</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Left side column. contains the logo and sidebar -->
+	<aside class="main-sidebar">
+
+		<!-- sidebar: style can be found in sidebar.less -->
+		<section class="sidebar">
+
+			<!-- Sidebar user panel (optional) -->
+			<div class="user-panel">
+				<div class="pull-left image">
+					<!--<img src="../images/user2-160x160.jpg" class="img-circle" alt="User Image">-->
+					<i class="fa fa-user-circle-o"></i>
+				</div>
+				<div class="pull-left info">
+					<p>Sebastien Corre</p>
+					<!-- Status -->
+					<a href="#">
+						<strong>Status :</strong>
+						<span class="status">{{ status.name }}</span>
+					</a>
+				</div>
+			</div>
+
+			<!-- search form (Optional) -->
+			<!--<form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>-->
+			<!-- /.search form -->
+
+			<!-- Sidebar Menu -->
+			<ul class="sidebar-menu" data-widget="tree">
+				<li class="header">MAIN NAVIGATION</li>
+				<!-- Optionally, you can add icons to the links -->
+				<li class="active">
+					<a routerLink="home">
+						<i class="fa fa-home"></i>
+						<span>Home</span>
+					</a>
+				</li>
+				<li class="treeview">
+					<a>
+						<i class="fa fa-th-list"></i>
+						<span>Tests and results</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a routerLink="tests/launchscript" routerLinkActive="active">
+								<i class="fa fa-circle-o"></i>
+								Launch script
+							</a>
+						</li>
+						<li>
+							<a routerLink="tests/running" routerLinkActive="active">
+								<i class="fa fa-circle-o"></i>
+								Running and history
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a>
+						<i class="fa fa-eye"></i>
+						<span>Scripts</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a> <!-- routerLink="scripts/view" routerLinkActive="active" -->
+								<i class="fa fa-circle-o"></i>
+								View scripts
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-files-o"></i>
+						<span>General catalogues</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Create catalogue
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Updates catalogues
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Manage catalogues
+							</a>
+						</li>
+					</ul>
+				</li>
+				<!--<li class="treeview">
+					<a href="#">
+						<i class="fa fa-file" aria-hidden="true"></i>
+						<span>Contributor catalogues</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Create contributor catalogue
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Manage contributor catalogue
+							</a>
+						</li>
+					</ul>
+				</li>-->
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-info-circle"></i>
+						<span>Reporting</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Create reporting
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								View reporting
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Manage reporting
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-file-code-o"></i>
+						<span>Batch</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Create batch
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Launch batch
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Results batch
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-signal" aria-hidden="true"></i>
+						<span>Network</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Numbering plan
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Network status
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-tachometer"></i>
+						<span>Administration</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Server status
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Edit config files
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Manage users
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Manage contributors
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-question-circle"></i>
+						<span>Help</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Contact list
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								Bug tickets
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-circle-o"></i>
+								How to
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- /.sidebar-menu -->
+		</section>
+		<!-- /.sidebar -->
+	</aside>
+
+	<!-- Content Wrapper. Contains page content -->
+	<div class="content-wrapper">
+		<!-- Content Header (Page header) -->
+		<section class="content-header">
+			<!-- Sidebar toggle button-->
+			<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+				<span class="sr-only">Toggle navigation</span>
+			</a>
+			<h1>
+				Dashboard
+				<small>Version 2.0.4</small>
+			</h1>
+			<div class="server-status">
+				<div class="server-status-icon">
+					<i class="material-icons">check_circle</i>
+				</div>
+				<div class="server-status-name">
+					<p>XML RPC Service</p>
+					<!-- Status -->
+					<div class="status">
+						<strong>Status :</strong>
+						<span>Running</span>
+					</div>
+				</div>
+			</div>
+			<!--<ol class="breadcrumb">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i> Home</a>
+                    </li>
+                    <li class="active">Dashboard</li>
+                </ol>-->
+		</section>
+
+		<!-- Main content -->
+		<section class="content container-fluid">
+
+			<router-outlet></router-outlet>
+			<!-- Routed views go here -->
+
+		</section>
+		<!-- /.content -->
+	</div>
+	<!-- /.content-wrapper -->
+
+	<!-- Main Footer -->
+	<footer class="main-footer">
+		<!-- To the right -->
+		<div class="pull-right hidden-xs">
+			Top
+		</div>
+		<!-- Default to the left -->
+		<img class="logo" src="../../../images/logo-orange-icon.jpg">
+		<strong>Acta</strong> 2017 All Rights Reserved.
+	</footer>
+
+	<!-- Control Sidebar -->
+	<aside class="control-sidebar control-sidebar-dark">
+		<!-- Create the tabs -->
+		<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+			<li class="active">
+				<a href="#control-sidebar-home-tab" data-toggle="tab">
+					<i class="fa fa-home"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#control-sidebar-settings-tab" data-toggle="tab">
+					<i class="fa fa-gears"></i>
+				</a>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<!-- Home tab content -->
+			<div class="tab-pane active" id="control-sidebar-home-tab">
+				<h3 class="control-sidebar-heading">Recent Activity</h3>
+				<ul class="control-sidebar-menu">
+					<li>
+						<a href="javascript:;">
+							<i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+							<div class="menu-info">
+								<h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+								<p>Will be 23 on April 24th</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<!-- /.control-sidebar-menu -->
+
+				<h3 class="control-sidebar-heading">Tasks Progress</h3>
+				<ul class="control-sidebar-menu">
+					<li>
+						<a href="javascript:;">
+							<h4 class="control-sidebar-subheading">
+								Custom Template Design
+								<span class="pull-right-container">
+									<span class="label label-danger pull-right">70%</span>
+								</span>
+							</h4>
+
+							<div class="progress progress-xxs">
+								<div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<!-- /.control-sidebar-menu -->
+
+			</div>
+			<!-- /.tab-pane -->
+			<!-- Stats tab content -->
+			<div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+			<!-- /.tab-pane -->
+			<!-- Settings tab content -->
+			<div class="tab-pane" id="control-sidebar-settings-tab">
+				<form method="post">
+					<h3 class="control-sidebar-heading">General Settings</h3>
+
+					<div class="form-group">
+						<label class="control-sidebar-subheading">
+							Report panel usage
+							<input type="checkbox" class="pull-right" checked>
+						</label>
+
+						<p>
+							Some information about this general settings option
+						</p>
+					</div>
+					<!-- /.form-group -->
+				</form>
+			</div>
+			<!-- /.tab-pane -->
+		</div>
+	</aside>
+	<!-- /.control-sidebar -->
+	<!-- Add the sidebar's background. This div must be placed
+      immediately after the control sidebar -->
+	<div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->

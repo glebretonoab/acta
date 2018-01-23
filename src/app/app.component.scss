@@ -1,0 +1,20 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
+@import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+// import
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../../node_modules/admin-lte/dist/css/AdminLTE.min.css";
+@import "../../node_modules/ionicons/dist/css/ionicons.min.css";
+
+@import '../styles/colors';
+@import '../styles/mixins';
+@import '../styles/signin';
+
+@import '../styles/skin-acta';
+@import '../styles/plugins';
+@import '../styles/content';
+@import '../styles/modal';

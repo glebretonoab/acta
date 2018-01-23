@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h3 class="acta-title">View scripts</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#tab_1" id="tab_1_link" data-toggle="tab">
+                        <i class="fa fa-folder-o"></i> Scripts folder map</a>
+                </li>
+                <li>
+                    <a href="#tab_2" id="tab_2_link" data-toggle="tab">
+                        <i class="fa fa-eye"></i> Edit file</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_1">
+                    <tree-root [nodes]="nodes" [options]="options"></tree-root>
+                </div>
+                <div class="tab-pane" id="tab_2">
+                    <div ace-editor
+                        [(text)]="text"
+                        [mode]="'xml'"
+                        [theme]="'eclipse'"
+                        [options]="options"
+                        [readOnly]="true"
+                        [autoUpdateContent]="true"
+                        [durationBeforeCallback]="1000"
+                        (textChanged)="onChange($event)"
+                        style="min-height: 500px; width:100%; overflow: auto;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
