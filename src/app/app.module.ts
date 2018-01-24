@@ -22,7 +22,7 @@ import { HomeComponent } from './components/dashboard/home/home.component';
 import { LaunchscriptComponent } from './components/dashboard/tests/launchscript/launchscript.component';
 import { RunningComponent } from './components/dashboard/tests/running/running.component';
 import { ViewComponent } from './components/dashboard/scripts/view/view.component';
-import { ManageComponent } from './components/dashboard/catalogues/manage/manage.component';
+import { ManageComponent } from './components/dashboard/catalogs/manage/manage.component';
 
 // Services
 import { StatusService } from './services/status.service';

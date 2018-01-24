@@ -7,7 +7,7 @@ import { HomeComponent } from './components/dashboard/home/home.component';
 import { LaunchscriptComponent } from './components/dashboard/tests/launchscript/launchscript.component';
 import { RunningComponent } from './components/dashboard/tests/running/running.component';
 import { ViewComponent } from './components/dashboard/scripts/view/view.component';
-import { ManageComponent } from './components/dashboard/catalogues/manage/manage.component';
+import { ManageComponent } from './components/dashboard/catalogs/manage/manage.component';
 
 export const ROUTES: Routes = [
   {
@@ -19,7 +19,7 @@ export const ROUTES: Routes = [
       { path: 'tests/launchscript', component: LaunchscriptComponent },
       { path: 'tests/running', component: RunningComponent },
       { path: 'scripts/view', component: ViewComponent },
-      { path: 'catalogues/manage', component: ManageComponent }
+      { path: 'catalogs/manage', component: ManageComponent }
     ]
   },
   { path: '', component: LoginComponent }
