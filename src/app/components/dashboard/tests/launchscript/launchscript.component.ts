@@ -44,7 +44,16 @@ export class LaunchscriptComponent implements AfterViewInit {
           }
         }
       ],
-      select: true
+      select: true,
+      rowGroup: {
+        dataSrc: 3
+      },
+      "columnDefs": [
+        { 
+          visible: false, 
+          "targets": [3]
+        }
+      ]
     });
 
     jQuery('.dataTable tbody').on('click', 'tr', function () {
@@ -55,7 +64,7 @@ export class LaunchscriptComponent implements AfterViewInit {
     jQuery('[data-toggle="popover"]').popover({
       html: true
     });
-    
+
     // Event
     jQuery('.launchscript').click(function () {
       jQuery('#tab_2_link').tab('show');

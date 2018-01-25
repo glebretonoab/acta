@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node build/dev.js --NODE_ENV=dev",
     "test": "karma start",
-    "postinstall": "webpack --config config/webpack.prod.js",
-    "build": "node build/server.js --NODE_ENV=production"
+    "build": "webpack --config config/webpack.prod.js && node build/server.js --NODE_ENV=production"
   },
   "license": "MIT",
   "dependencies": {
@@ -32,6 +31,7 @@
     "datatables.net-bs": "^1.10.16",
     "datatables.net-buttons-dt": "^1.5.1",
     "datatables.net-dt": "^1.10.16",
+    "datatables.net-rowgroup": "^1.0.2",
     "datatables.net-select": "^1.2.4",
     "datatables.net-select-dt": "^1.2.4",
     "express": "^4.16.2",

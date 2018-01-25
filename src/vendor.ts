@@ -41,6 +41,9 @@ import 'datatables.net-select-dt/css/select.dataTables.min';
 import 'datatables.net-buttons/js/dataTables.buttons.min';
 import 'datatables.net-buttons-dt/css/buttons.dataTables.min';
 
+// Rowgroup
+import 'datatables.net-rowgroup/js/dataTables.rowGroup.min';
+
 // Bootstrap datatables
 import 'datatables.net-bs/js/dataTables.bootstrap';
 import 'datatables.net-bs/css/dataTables.bootstrap';

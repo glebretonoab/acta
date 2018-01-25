@@ -48,14 +48,32 @@ export class ManageComponent implements AfterViewInit {
           }
         }
       ],
-      select: true
+      select: true,
+      rowGroup: {
+        dataSrc: 3
+      },
+      "columnDefs": [
+        { 
+          visible: false, 
+          "targets": [3]
+        }
+      ]
     });
 
     jQuery('.dataTable-complete-4').DataTable({
       dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
         "<'row'<'col-sm-12'tr>>" +
         "<'row'<'col-sm-5'p>>",
-      select: false
+      select: false,
+      rowGroup: {
+        dataSrc: 3
+      },
+      "columnDefs": [
+        { 
+          visible: false, 
+          "targets": [3]
+        }
+      ]
     });
 
     jQuery('.dataTable-complete-add-to-catalog').DataTable({
