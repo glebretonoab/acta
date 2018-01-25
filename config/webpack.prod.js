@@ -16,6 +16,13 @@ module.exports = webpackMerge(commonConfig, {
     chunkFilename: '[id].[hash].chunk.js'
   },
 
+  stats: {
+    // Add errors
+    errors: true,
+    // Add details to errors (like resolving log)
+    errorDetails: true
+  },
+
   module: {
     rules: [
         {
