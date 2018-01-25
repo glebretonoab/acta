@@ -225,6 +225,10 @@
                 border-bottom-right-radius: 0;
                 border-bottom-left-radius: 0;
                 padding: 15px;
+
+                .callgraph {
+                    margin: 20px 0;
+                }
             }
         }
         .box {
@@ -279,18 +283,19 @@
                     margin: 0 0 0 5px;
                 }
             }
-        } // Datatables
+        } 
+        // Datatables
         .dataTable {
             .status-ok,
             .status-ko {
-                font-weight: bold;
+                font-weight: 600;
             }
             .run,
             .status-ok {
                 color: #4eba4c;
             }
             .status-ko {
-                color: $administrator_color;
+                color: red;
             }
             tbody {
                 tr {
@@ -348,5 +353,38 @@
                 }
             }
         }
+        .form-info {
+            padding: 10px 0;
+
+            span.failed {
+                font-weight: 600;
+                color: red;
+            }
+        }
+
+        // Panel
+        .panel {
+            margin-bottom: 0;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+
+            >.panel-heading {
+                background-color: #4a83a1;
+                color: white;
+            }
+
+            .panel-body {
+                background-color: #fdfdfd;
+                color: #1e282c;
+                padding: 20px 30px;
+
+                .graph-description {
+                    max-height: 350px;
+                    overflow-y: auto;
+                }
+            }
+        }
+
     }
 }
