@@ -310,6 +310,20 @@
         .logo {
             margin-right: 10px;
         }
+        a.top {
+            height: 58px;
+            background-color: #f9f9f9;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0 15px;
+
+            i {
+                margin-top: 12px; 
+                font-size: 30px;
+                color: #1e282c;
+            }
+        }
     } // Color by status
     .wrapper {
         &.wrapper-adm {

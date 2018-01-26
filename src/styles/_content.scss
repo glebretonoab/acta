@@ -1,9 +1,8 @@
 .skin-acta {
     .content {
-        /*padding: 10px 15px;
-        overflow-y: scroll;
-        position: relative;
-        height: calc(100% - 250px);*/
+        max-height: calc(100vh - 183px);
+        overflow-y: auto;
+        
         home {
             .pad {
                 .info-box {

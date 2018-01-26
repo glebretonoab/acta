@@ -18,3 +18,7 @@
 @import '../styles/plugins';
 @import '../styles/content';
 @import '../styles/modal';
+
+html, body {
+    overflow: hidden;
+}
