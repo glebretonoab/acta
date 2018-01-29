@@ -12,26 +12,55 @@
                     <a href="#tab_1" id="tab_1_link" data-toggle="tab">
                         <i class="fa fa-folder-o"></i> Scripts folder map</a>
                 </li>
-                <li>
-                    <a href="#tab_2" id="tab_2_link" data-toggle="tab">
-                        <i class="fa fa-eye"></i> Edit file</a>
-                </li>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="tab_1">
-                    <tree-root [nodes]="nodes" [options]="options"></tree-root>
-                </div>
-                <div class="tab-pane" id="tab_2">
-                    <div ace-editor
-                        [(text)]="text"
-                        [mode]="'xml'"
-                        [theme]="'eclipse'"
-                        [options]="options"
-                        [readOnly]="true"
-                        [autoUpdateContent]="true"
-                        [durationBeforeCallback]="1000"
-                        (textChanged)="onChange($event)"
-                        style="min-height: 500px; width:100%; overflow: auto;"></div>
+                    <div class="col-md-4">
+                        <div id="jstree_demo_div">
+                            <ul>
+                                <li data-jstree='{"icon":"fa fa-folder-o"}'>ACTA
+                                    <ul>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>18x</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>100</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>200
+                                            <ul>
+                                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>200_cancel.xml</li>
+                                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>200_noSDP.xml</li>
+                                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>200_SDP.xml</li>
+                                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>200_SDP_woUpdate.xml</li>
+                                            </ul>
+                                        </li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>ACK</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>BYE</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>ERRORS</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>INVITE</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>OPTIONS</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>PRACK</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>Receive_call</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>sounds</li>
+                                        <li data-jstree='{"icon":"fa fa-folder-o"}'>UPDATE</li>
+                                    </ul>
+                                </li>
+                                <li data-jstree='{"icon":"fa fa-folder-o"}'>ACTA_ALE</li>
+                                <li data-jstree='{"icon":"fa fa-folder-o"}'>ACTA_Asterisk</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div id="editor" class="editor">
+                            <div ace-editor
+                                [(text)]="text"
+                                [mode]="'xml'"
+                                [theme]="'eclipse'"
+                                [options]="options"
+                                [readOnly]="true"
+                                [autoUpdateContent]="true"
+                                [durationBeforeCallback]="1000"
+                                (textChanged)="onChange($event)"
+                                style="min-height: 500px; width:100%; overflow: auto;"></div>
+                        </div>
+                    </div>
+                    <div style="clear:left"></div>
                 </div>
             </div>
         </div>

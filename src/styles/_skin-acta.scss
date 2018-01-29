@@ -326,6 +326,7 @@
         }
     } // Color by status
     .wrapper {
+
         &.wrapper-adm {
             @include status-color($administrator_color);
         }

@@ -23,9 +23,6 @@ import 'bootstrap-datepicker/dist/css/bootstrap-datepicker.min';
 import 'select2/dist/js/select2.min';
 import 'select2/dist/css/select2.min';
 
-// Select 2 multi checkboxes
-import 'select2-multi-checkboxes/select2.multi-checkboxes';
-
 // iCheck
 import 'admin-lte/plugins/iCheck/flat/blue';
 import 'admin-lte/plugins/iCheck/icheck.min';
@@ -55,6 +52,10 @@ import 'ace-builds/src-min-noconflict/ace';
 import 'ace-builds/src-min-noconflict/theme-eclipse';
 //import 'ace-builds/src-min-noconflict/mode-xml';
 import 'brace/mode/xml';
+
+// jsTree
+import 'jstree/dist/jstree.min';
+import 'jstree/dist/themes/default/style.min';
 
 // Custom
 import '../src/js/adminlte-acta';

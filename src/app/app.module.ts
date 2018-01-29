@@ -6,7 +6,6 @@ import { HttpModule }    from '@angular/http';
 // Plugins
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AceEditorModule } from 'ng2-ace-editor';
-import { TreeModule } from 'angular-tree-component';
 
 // Configuration
 import { Configuration } from './app.configuration';
@@ -34,8 +33,7 @@ import { StatusService } from './services/status.service';
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true }),
     BrowserAnimationsModule,
-    AceEditorModule,
-    TreeModule
+    AceEditorModule
   ],
   declarations: [
     AppComponent,
