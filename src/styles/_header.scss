@@ -1,33 +1,126 @@
-// _content.scss
-ihome-app {
+.skin-acta {
+    &.layout-top-nav .main-header>.logo {
+        background-color: #3c8dbc;
+        color: #ffffff;
+        border-bottom: 0 solid transparent;
+        &:hover {
+            background-color: #3b8ab8;
+        }
+    }
 
-    // Header
-    mat-toolbar {
-        padding: 0 16px 0 0;
-
-        &.header {
-            box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
-
-            .icon {
-                background: transparent url('../images/spinner_icon.png') no-repeat;
-                background-size: 100%;
-                width: 40px;
-                height: 40px;
-                margin-left: 10px;
-
-                span {
-                    padding-left: 54px;
-                    font-size: 16px;
-                    font-weight: 400;
+    .main-header {
+        background-color: #1e282c;
+        .navbar {
+            .nav {
+                >li>a {
+                    color: #ffffff;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: rgba(0, 0, 0, 0.1);
+                        color: #f6f6f6;
+                    }
                 }
-
+                .open>a {
+                    background: rgba(0, 0, 0, 0.1);
+                    color: #f6f6f6;
+                    &:hover,
+                    &:focus {
+                        background: rgba(0, 0, 0, 0.1);
+                        color: #f6f6f6;
+                    }
+                }
+                >.active>a {
+                    background: rgba(0, 0, 0, 0.1);
+                    color: #f6f6f6;
+                }
             }
+            .sidebar-toggle {
+                color: #ffffff;
+                &:hover {
+                    color: #f6f6f6;
+                    background: rgba(0, 0, 0, 0.1);
+                    background-color: #367fa9;
+                }
+                color: #fff;
+            }
+        }
+        .logo-acta {
+            display: block;
+            float: left;
+            z-index: 1001;
+            height: 70px;
+            width: 670px;
+            position: relative;
+            background: url(../images/logo-acta-icon.png) 17px 11px no-repeat;
+            padding: 15px 0 0 105px;
+            .firstelement {
+                font-family: 'Orbitron', sans-serif;
+                color: $administrator_color;
+                font-weight: 700;
+                font-size: 29px;
+                text-transform: uppercase;
+            }
+            .secondelement,
+            .thirdelement {
+                font-family: 'Raleway', sans-serif;
+            }
+            .secondelement {
+                color: #1485cc;
+                font-size: 18px;
+                margin-left: 10px;
+            }
+            .thirdelement {
+                color: #b9b9b9;
+                font-size: 11px;
+                margin-left: 55px;
+            }
+        }
+        li.user-header {
+            background-color: #3c8dbc;
+        }
+        .navbar-custom-menu {
+            padding-right: 5px;
+            .navbar-nav {
+                margin: 17px 0;
+                a {
+                    border: 2px solid rgba(255, 255, 255, 0.5);
+                    height: 36px;
+                    width: 36px;
+                    padding: 0 !important;
+                    text-align: center;
+                    line-height: 38px !important;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    &:hover {
+                        border: 2px solid white;
+                    }
+                    &.exit {
+                        color: #ff3333;
+                        &:hover {
+                            color: #ff3333;
+                        }
+                    }
+                    i {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
 
-            button.menu {
-                float: right;
-                -webkit-animation-delay: 5s;
-                animation-delay: 5s;
+    @media (max-width: 767px) {
+        .main-header .navbar .dropdown-menu li {
+            &.divider {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            a {
+                color: #fff;
+                &:hover {
+                    background: #367fa9;
+                }
             }
         }
     }
 }
+

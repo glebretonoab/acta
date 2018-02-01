@@ -22,13 +22,6 @@ export class LaunchscriptComponent implements AfterViewInit {
     // Select2
     jQuery('.select2').select2();
 
-    // iCheck
-    jQuery('input[type=checkbox]').iCheck({
-      labelHover: false,
-      cursor: true,
-      checkboxClass: 'icheckbox_flat-blue'
-    });
-
     // Datatables
     jQuery('.dataTable-complete-1').DataTable({
       dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +

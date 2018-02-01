@@ -1,0 +1,90 @@
+.skin-acta {
+    .content {
+        // Form
+        .form {
+            &.form-filter {
+                margin-bottom: 15px;
+            }
+            .form-group {
+                input.form-control {
+                    height: 29px;
+                    &.number {
+                        width: 75px;
+                    }
+                    &.number-inline {
+                        margin-right: 10px;
+                        padding: 4px 12px;
+                    }
+                }
+                .select2 {
+                    min-width: 200px;
+                    width: 100% !important;
+                }
+                .control-label {
+                    text-align: left;
+                }
+            }
+        }
+        .form-inline {
+            .form-group {
+                label {
+                    margin-right: 10px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .form-new {
+            background-color: #fdfdfd;
+            border-left: 5px solid #1485cc;
+            margin-bottom: 20px;
+            padding: 10px 5px 0 5px;
+            .form-group {
+                .control-label {
+                    text-align: left;
+                }
+                .scripts_target {
+                    i {
+                        color: $administrator_color;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .form-info {
+            padding: 10px 0;
+            span.failed {
+                font-weight: 600;
+                color: red;
+            }
+        }
+        .form-detail {
+            .form-group {
+                &.form-head {
+                    label {
+                        padding: 10px 5px;
+                        color: #1e282c;
+                        font-weight: bold;
+                    }
+
+                    .select2 {
+                        width: 50% !important;
+                    }
+                }
+
+                label {
+                    text-align: left;
+                    font-weight: normal;
+                    padding: 2px 5px;
+                }
+
+                label, span.info {
+                    line-height: 1;
+                }
+
+                span.info {
+                    padding: 2px 15px;
+                }
+            }
+        }
+    }
+}

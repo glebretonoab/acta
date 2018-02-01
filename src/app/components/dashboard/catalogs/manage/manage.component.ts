@@ -12,7 +12,7 @@ declare var jQuery: any;
   styles: [require('./manage.component.scss').toString()]
 })
 
-export class ManageComponent implements AfterViewInit {
+export class CatalogManageComponent implements AfterViewInit {
 
   constructor(
     private configuration: Configuration

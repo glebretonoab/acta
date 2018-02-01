@@ -1,0 +1,74 @@
+.skin-acta {
+    .content {
+        .box {
+            border-radius: 0;
+            box-shadow: none;
+            border-top: none;
+            &.box-acta-info {
+                /*border: 1px solid #d2d6de;
+                border-radius: 5px;*/
+                margin-bottom: 0;
+                
+                .box-header {
+                    background-color: #1485cc;
+                    color: white;
+                    padding: 10px 15px;
+                }
+                .box-body {
+                    border-bottom: 1px solid #d2d6de;
+                    border-left: 1px solid #d2d6de;
+                    border-right: 1px solid #d2d6de;
+                    padding-bottom: 0px;
+                }
+            }
+            &.box-filter {
+                .box-header {
+                    background-color: #fdfdfd;
+                }
+                .box-body {
+                    padding: 10px;
+                    background-color: #f7f7f7;
+                    .form-group {
+                        margin-bottom: 5px;
+                        .icheckbox {
+                            padding-top: 7px;
+                            .icheckbox_flat-blue {
+                                margin-right: 5px;
+                                margin-top: -2px;
+                            }
+                        }
+                    }
+                    div.or {
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin-top: 25px;
+                    }
+                    .buttons-group {
+                        a {
+                            float: right;
+                            margin: 4px 0;
+                        }
+                    }
+                }
+            }
+            &.box-datatable {
+                margin-bottom: 0;
+                .box-header {
+                    padding-top: 0;
+                    span.select2 {
+                        width: 100% !important;
+                        span.select2-selection {
+                            border: 1px solid #1e282c !important;
+                        }
+                    }
+                }
+            }
+            .box-header {
+                h3.box-title {
+                    font-size: 15px;
+                    margin: 0 0 0 5px;
+                }
+            }
+        }
+    }
+}

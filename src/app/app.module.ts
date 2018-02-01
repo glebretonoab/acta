@@ -21,8 +21,10 @@ import { HomeComponent } from './components/dashboard/home/home.component';
 import { LaunchscriptComponent } from './components/dashboard/tests/launchscript/launchscript.component';
 import { RunningComponent } from './components/dashboard/tests/running/running.component';
 import { TracesComponent } from './components/dashboard/tests/traces/traces.component';
+import { AnalysisComponent } from './components/dashboard/tests/analysis/analysis.component';
 import { ViewComponent } from './components/dashboard/scripts/view/view.component';
-import { ManageComponent } from './components/dashboard/catalogs/manage/manage.component';
+import { CatalogManageComponent } from './components/dashboard/catalogs/manage/manage.component';
+import { ReportingManageComponent } from './components/dashboard/reporting/manage/manage.component';
 
 // Services
 import { StatusService } from './services/status.service';
@@ -43,8 +45,10 @@ import { StatusService } from './services/status.service';
     LaunchscriptComponent,
     RunningComponent,
     TracesComponent,
+    AnalysisComponent,
     ViewComponent,
-    ManageComponent
+    CatalogManageComponent,
+    ReportingManageComponent
   ],
   providers: [
     Configuration,

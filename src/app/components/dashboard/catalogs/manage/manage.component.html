@@ -10,7 +10,8 @@
             <ul class="nav nav-tabs">
                 <li class="active">
                     <a href="#tab_1" id="tab_1_link" data-toggle="tab">
-                        <i class="fa fa-th-list"></i> View</a>
+                        <i class="fa fa-th-list"></i>
+                    </a>
                 </li>
                 <li>
                     <a href="#tab_2" id="tab_2_link" data-toggle="tab">
@@ -22,28 +23,36 @@
                 <div class="tab-pane active" id="tab_1">
                     <div class="box box-filter box-default">
                         <div class="box-body">
-                            <div class="col-xs-10 col-lg-9">
-                                <form class="form-inline">
+                            <div class="col-xs-10 col-sm-8 col-lg-6">
+                                <form class="form-horizontal form-detail">
+                                    <div class="form-group form-head">
+                                        <label class="col-sm-2 control-label">CATALOG</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control select2" data-placeholder="Select your catalog">
+                                                <option>Out of dialog</option>
+                                                <option selected>Every Major Release</option>
+                                                <option>Every 2 Major Release</option>
+                                            </select>
+                                            <a href="" class="btn btn-default" data-toggle="modal" data-target="#modal-edit">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="" class="btn btn-other" data-toggle="modal" data-target="#modal-duplicate">
+                                                <i class="fa fa-clone" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="" class="btn btn-delete" data-toggle="modal" data-target="#modal-delete">
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                     <div class="form-group">
-                                        <label for="exampleInputName2">Catalog</label>
-                                        <select class="form-control select2" data-placeholder="Select your catalog">
-                                            <option>Out of dialog</option>
-                                            <option selected>Every Major Release</option>
-                                            <option>Every 2 Major Release</option>
-                                        </select>
-                                        <a href="" class="btn btn-default" data-toggle="modal" data-target="#modal-edit">
-                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="" class="btn btn-other" data-toggle="modal" data-target="#modal-duplicate">
-                                            <i class="fa fa-clone" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="" class="btn btn-delete" data-toggle="modal" data-target="#modal-delete">
-                                            <i class="fa fa-trash" aria-hidden="true"></i>
-                                        </a>
+                                        <label for="inputPassword" class="col-sm-2 control-label">Description</label>
+                                        <div class="col-sm-10">
+                                            <span class="info">Every Major Release</span>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-xs-2 col-lg-3 text-right">
+                            <div class="col-xs-2 col-sm-4 col-lg-6 text-right">
                                 <a href="" class="btn btn-default btn-with-icon" data-toggle="modal" data-target="#modal-add-to-catalog">
                                     <i class="fa fa-plus" aria-hidden="true"></i> Add to catalog
                                 </a>
@@ -63,7 +72,7 @@
                                                 <th width="40px">ID</th>
                                                 <th>File name</th>
                                                 <th>Description</th>
-                                                <th></th>
+                                                <th width="100px"></th>
                                                 <th width="50px">CallFlow</th>
                                             </tr>
                                         </thead>
@@ -99,7 +108,8 @@
                                                     <span class="badge">10104</span>
                                                 </td>
                                                 <td>10104_BC23_incoming_INVITE_SDP_send_REINVITE_noSDP.xml</td>
-                                                <td>[BC23: ACTa receives call from IPBX establish the call, then sends reINVITE without SDP</td>
+                                                <td>[BC23: ACTa receives call from IPBX establish the call, then sends reINVITE
+                                                    without SDP</td>
                                                 <td>Basic-calls</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -125,7 +135,8 @@
                                                     <span class="badge">10201</span>
                                                 </td>
                                                 <td>10201_UPD02_outgoing_empty_update_confirmed_dialog.xml</td>
-                                                <td>[UPD02: ACTa calls [Phone number] with SDP ,establishs call and sends empty UPDATE in confirmed dialog</td>
+                                                <td>[UPD02: ACTa calls [Phone number] with SDP ,establishs call and sends empty
+                                                    UPDATE in confirmed dialog</td>
                                                 <td>Update</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -138,8 +149,9 @@
                                                     <span class="badge">10202</span>
                                                 </td>
                                                 <td>10202_UPD03_outgoing_update_without_dialog_ended.xml</td>
-                                                <td>[UPD03: ACTa calls [Phone number] with SDP, establishes call, sends an UPDATE without SDP and expects an error      
-                                                    re-INVITE</td>
+                                                <td>[UPD03: ACTa calls [Phone number] with SDP, establishes call, sends an UPDATE
+                                                    without SDP and expects an error re-INVITE
+                                                </td>
                                                 <td>Update</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -152,7 +164,8 @@
                                                     <span class="badge">10300</span>
                                                 </td>
                                                 <td>10300_REINV02_outgoing_MOH_send_empty_reINVITE.xml</td>
-                                                <td>[re_INVITE02: ACTa calls [Phone number] with SDP , establishs call and sends reINVITE after 3s</td>
+                                                <td>[re_INVITE02: ACTa calls [Phone number] with SDP , establishs call and sends
+                                                    reINVITE after 3s</td>
                                                 <td>re-INVITE</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -165,7 +178,8 @@
                                                     <span class="badge">10301</span>
                                                 </td>
                                                 <td>10301_REINV03_outgoing_send_reINVITE_a=inactive_send_reINVITE_a=sendrecv.xml</td>
-                                                <td>[re_INVITE03 ACTa calls [Phone number] with SDP,establishs call ,then sends reINVITE after 3s with a=inactive and reINVITE after 3s with a=sendrecv</td>
+                                                <td>[re_INVITE03 ACTa calls [Phone number] with SDP,establishs call ,then sends
+                                                    reINVITE after 3s with a=inactive and reINVITE after 3s with a=sendrecv</td>
                                                 <td>re-INVITE</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -178,7 +192,8 @@
                                                     <span class="badge">10302</span>
                                                 </td>
                                                 <td>10302_REINV04_outgoing_send_reINVITE_a=sendonly_send_reINVITE_a=sendrecv.xml</td>
-                                                <td>[re_INVITE04 ACTa calls [Phone number] with SDP,establishs call ,then sends reINVITE after 3s with a=sendonly and reINVITE after 3s with a=sendrecv</td>
+                                                <td>[re_INVITE04 ACTa calls [Phone number] with SDP,establishs call ,then sends
+                                                    reINVITE after 3s with a=sendonly and reINVITE after 3s with a=sendrecv</td>
                                                 <td>re-INVITE</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -304,7 +319,8 @@
                                                     </a>
                                                 </td>
                                                 <td>10104_BC23_incoming_INVITE_SDP_send_REINVITE_noSDP.xml</td>
-                                                <td>[BC23: ACTa receives call from IPBX establish the call, then sends reINVITE without SDP</td>
+                                                <td>[BC23: ACTa receives call from IPBX establish the call, then sends reINVITE
+                                                    without SDP</td>
                                                 <td>Basic-calls</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -334,7 +350,8 @@
                                                     </a>
                                                 </td>
                                                 <td>10201_UPD02_outgoing_empty_update_confirmed_dialog.xml</td>
-                                                <td>[UPD02: ACTa calls [Phone number] with SDP ,establishs call and sends empty UPDATE in confirmed dialog</td>
+                                                <td>[UPD02: ACTa calls [Phone number] with SDP ,establishs call and sends empty
+                                                    UPDATE in confirmed dialog</td>
                                                 <td>Update</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -349,8 +366,9 @@
                                                     </a>
                                                 </td>
                                                 <td>10202_UPD03_outgoing_update_without_dialog_ended.xml</td>
-                                                <td>[UPD03: ACTa calls [Phone number] with SDP, establishes call, sends an UPDATE without SDP and expects an error      
-                                                    re-INVITE</td>
+                                                <td>[UPD03: ACTa calls [Phone number] with SDP, establishes call, sends an UPDATE
+                                                    without SDP and expects an error re-INVITE
+                                                </td>
                                                 <td>Update</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -365,7 +383,8 @@
                                                     </a>
                                                 </td>
                                                 <td>10300_REINV02_outgoing_MOH_send_empty_reINVITE.xml</td>
-                                                <td>[re_INVITE02: ACTa calls [Phone number] with SDP , establishs call and sends reINVITE after 3s</td>
+                                                <td>[re_INVITE02: ACTa calls [Phone number] with SDP , establishs call and sends
+                                                    reINVITE after 3s</td>
                                                 <td>re-INVITE</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -380,7 +399,8 @@
                                                     </a>
                                                 </td>
                                                 <td>10301_REINV03_outgoing_send_reINVITE_a=inactive_send_reINVITE_a=sendrecv.xml</td>
-                                                <td>[re_INVITE03 ACTa calls [Phone number] with SDP,establishs call ,then sends reINVITE after 3s with a=inactive and reINVITE after 3s with a=sendrecv</td>
+                                                <td>[re_INVITE03 ACTa calls [Phone number] with SDP,establishs call ,then sends
+                                                    reINVITE after 3s with a=inactive and reINVITE after 3s with a=sendrecv</td>
                                                 <td>re-INVITE</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
@@ -395,7 +415,8 @@
                                                     </a>
                                                 </td>
                                                 <td>10302_REINV04_outgoing_send_reINVITE_a=sendonly_send_reINVITE_a=sendrecv.xml</td>
-                                                <td>[re_INVITE04 ACTa calls [Phone number] with SDP,establishs call ,then sends reINVITE after 3s with a=sendonly and reINVITE after 3s with a=sendrecv</td>
+                                                <td>[re_INVITE04 ACTa calls [Phone number] with SDP,establishs call ,then sends
+                                                    reINVITE after 3s with a=sendonly and reINVITE after 3s with a=sendrecv</td>
                                                 <td>re-INVITE</td>
                                                 <td class="text-center">
                                                     <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">

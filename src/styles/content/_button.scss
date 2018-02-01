@@ -1,0 +1,84 @@
+.skin-acta {
+    .content {
+        .btn {
+            border-radius: 0;
+            box-shadow: none;
+            &.btn-default {
+                background-color: white;
+                color: #1485cc;
+                border: 1px solid #1485cc;
+                &:hover {
+                    background-color: #1485cc;
+                    color: white;
+                }
+            }
+            &.btn-below {
+                background-color: white;
+                color: #1485cc;
+                border: 1px solid #1485cc;
+                padding: 0 10px;
+                line-height: 0;
+
+                &:hover {
+                    background-color: #1485cc;
+                    color: white;
+                }
+
+                i {
+                    font-size: 20px;
+                }
+            }
+            &.btn-delete {
+                background-color: white;
+                color: $administrator_color;
+                border: 1px solid $administrator_color;
+                &:hover {
+                    background-color: $administrator_color;
+                    color: white;
+                }
+            }
+            &.btn-other {
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+            &.btn-with-icon {
+                i {
+                    margin-right: 5px;
+                }
+            }
+            &.btn-filter {
+                background-color: #1485cc;
+                color: white;
+                border: 1px solid #1485cc;
+                padding: 3px 12px;
+            }
+            &.btn-modal-ok {
+                background-color: #1485cc;
+                color: white;
+                border: 1px solid #1485cc;
+            }
+            &.btn-modal-close {
+                background-color: white;
+                border: 1px solid #898e91;
+                color: #898e91;
+                border: 1px solid #898e91;
+            }
+            &.btn-modal-yes {
+                background-color: #4eba4c;
+                color: white;
+                border: 1px solid #4eba4c;
+            }
+            &.btn-modal-no {
+                background-color: white;
+                border: 1px solid $administrator_color;
+                color: $administrator_color;
+                border: 1px solid $administrator_color;
+            }
+        }
+    }
+}

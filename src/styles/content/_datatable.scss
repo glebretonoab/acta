@@ -1,0 +1,51 @@
+.skin-acta {
+    .content {
+        .dataTable {
+            width: 100% !important;
+            .status-ok,
+            .status-ko {
+                font-weight: 600;
+            }
+            .run,
+            .status-ok {
+                color: #4eba4c;
+            }
+            .status-ko {
+                color: red;
+            }
+            tbody {
+                tr {
+                    &.selected {
+                        background-color: #dbeffc !important;
+                    }
+                    td {
+                        span.type {
+                            color: white;
+                            font-weight: 600;
+                            text-align: center;
+                            font-size: 13px;
+                            width: 75px;
+                            display: block;
+                            padding: 2px;
+                            &.major {
+                                background-color: red;
+                            }
+                            &.minor {
+                                background-color: #fa8258;
+                            }
+                            &.warn {
+                                background-color: #ffa500;
+                            }
+                        }
+                    }
+                }
+            }
+            tr.group td {
+                font-weight: 600;
+                background-color: white;
+                border: 1px solid #1485cc !important;
+                color: #1485cc;
+            }
+        }
+    }
+}

@@ -29,7 +29,6 @@
             }
         }
     }
-
     .dataTable-complete {
         border-top: 1px solid #f4f4f4;
         border-bottom: none;
@@ -152,7 +151,6 @@
             }
         }
     }
-
     .select2-container--default {
         .select2-selection--multiple {
             .select2-selection__choice {
@@ -161,32 +159,26 @@
                 border-radius: 0
             }
         }
-
         .select2-results__option--highlighted[aria-selected] {
             background-color: #1485cc;
             color: white;
         }
     }
-
-    .select2-container--default.select2-container--focus .select2-selection--multiple, .select2-container--default .select2-search--dropdown .select2-search__field {
+    .select2-container--default.select2-container--focus .select2-selection--multiple,
+    .select2-container--default .select2-search--dropdown .select2-search__field {
         border-color: #1485cc !important;
-    }
-
-    // Select 2 multi checkbox 
-    .select2-results__option .wrap:before{
+    } // Select 2 multi checkbox 
+    .select2-results__option .wrap:before {
         font-family: 'FontAwesome';
-        color:#999;
-        content:"\f096";
-        width:25px;
-        height:25px;
+        color: #999;
+        content: "\f096";
+        width: 25px;
+        height: 25px;
         padding-right: 10px;
-        
     }
-    .select2-results__option[aria-selected=true] .wrap:before{
-        content:"\f14a";
-    }
-
-    // jsTree
+    .select2-results__option[aria-selected=true] .wrap:before {
+        content: "\f14a";
+    } // jsTree
     .jstree {
         i.fa-folder-o {
             color: #e0a602;
@@ -194,10 +186,37 @@
         i.fa-file-code-o {
             color: #1485cc;
         }
-    }
 
-    // Editor
+        &.jstree-default .jstree-clicked {
+            background: white;
+            border: 1px solid #1485cc;
+            border-radius: 0;
+            font-weight: 600;
+            box-shadow: none;
+        }
+    } // Editor
     .editor {
         display: none;
+
+        .filepath {
+            border: 1px solid #1485cc;
+            margin-bottom: 10px;
+
+            label, .path {
+                float: left;
+                padding: 0 10px;
+            }
+
+            label {
+                margin-bottom: 0;
+                background-color: #1485cc;
+                color: white;
+                font-weight: normal;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
     }
 }

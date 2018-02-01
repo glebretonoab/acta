@@ -1,0 +1,31 @@
+.skin-acta {
+    .content {
+        h3.acta-title {
+            font-size: 16px;
+            background-color: white;
+            margin: 0;
+            padding: 10px 15px;
+            border-bottom: 1px solid #d4d4d4; 
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .acta-sub-title {
+            border-left: 5px solid #1485cc;
+            border-bottom: 1px solid #1485cc;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            i,
+            span {
+                color: #1485cc;
+            }
+            i {
+                margin-right: 5px;
+            }
+            span {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+}

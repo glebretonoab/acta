@@ -1,0 +1,19 @@
+.skin-acta {
+    .wrapper,
+    .left-side {
+        background-color: white;
+    }
+    
+    // Color by status
+    .wrapper {
+        &.wrapper-adm {
+            @include status-color($administrator_color);
+        }
+        &.wrapper-sup {
+            @include status-color($supervisor_color);
+        }
+        &.wrapper-ctr {
+            @include status-color($contributor_color);
+        }
+    }
+}

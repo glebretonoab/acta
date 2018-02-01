@@ -1,0 +1,1486 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h3 class="acta-title">Script analysis</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h4>
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> The call is not validated!</h4>
+            <span class="major">2 majors</span>,
+            <span class="minor">3 minors</span> and
+            <span class="warning">3 warnings</span> errors have been found.
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box box-acta-info">
+                    <div class="box-header">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> Script informations
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <form class="form-horizontal form-info">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-lg-2">Name</label>
+                                    <div class="col-sm-10 col-lg-10">
+                                        11500_FRAG01_outgoing_INVITE_SDPoverloaded.xml [ACTA_Transverse, 0299000001, IPBX_Transverse-R 11.2, 3191105, , ]
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 col-lg-2">Date</label>
+                                    <div class="col-sm-10 col-lg-10">
+                                        <i class="fa fa-calendar-o" aria-hidden="true"></i> 2018-01-15 12:02:02
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 col-lg-2">Scenario</label>
+                                    <div class="col-sm-10 col-lg-10">
+                                        saloui_1341
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 text-left">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-lg-3">PCAP</label>
+                                    <div class="col-sm-10 col-lg-9">
+                                        <a href="">
+                                            <i class="fa fa-download" aria-hidden="true"></i> Download</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 col-lg-3">Analysis</label>
+                                    <div class="col-sm-10 col-lg-9">
+                                        <a [routerLink]="['../analysis']" routerLinkActive="active" class="analysis">
+                                            <i class="fa fa-eye" aria-hidden="true"></i> View
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 col-lg-3">Status</label>
+                                    <div class="col-sm-10 col-lg-9">
+                                        <span class="failed">FAILED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear: left"></div>
+                        </form>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box box-acta-info">
+                    <div class="box-header">
+                        <i class="fa fa-phone" aria-hidden="true"></i> Selected Call-Id
+                    </div>
+                    <div class="box-body">
+                        <form class="form-horizontal form-info">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-lg-2">Call-ID</label>
+                                    <div class="col-sm-10 col-lg-10">
+                                        uDUV3KEijk01c4QYRnJqLbMfSmrhoOBWG9Fla7s
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 col-lg-2">From</label>
+                                    <div class="col-sm-10 col-lg-10">
+                                        <sip:0299000001@6.4.15.31;user=phone>;tag=0dDW5LItNXbw8rpveGYi
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 col-lg-2">To</label>
+                                    <div class="col-sm-10 col-lg-10">
+                                        <sip:3191105@6.3.19.3;user=phone>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear: left"></div>
+                        </form>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+        </div>
+        <div style="clear: left"></div>
+
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#tab_1" id="tab_1_link" data-toggle="tab">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> Errors</a>
+                </li>
+                <li>
+                    <a href="#tab_2" id="tab_2_link" data-toggle="tab">
+                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i> Call graph</a>
+                </li>
+                <li>
+                    <a href="#tab_3" id="tab_3_link" data-toggle="tab">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i> Logs</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_1">
+                    <table id="example1" class="table table-bordered table-striped dataTable dataTable-complete dataTable-complete-1" role="grid">
+                        <thead>
+                            <tr role="row">
+                                <th width="50px">Type</th>
+                                <th>Message</th>
+                                <th>Invite</th>
+                                <th style="width: 50px"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr role="row" class="odd">
+                                <td class="text-center">
+                                    <span class="type major">MAJOR</span>
+                                </td>
+                                <td>[visite_lab.conf] unsupported codec. Payload Type 31</td>
+                                <td>
+                                    <a href="">
+                                        <i class="fa fa-eye"></i> INVITE
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a href="" class="btn btn-below">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="text-center">
+                                    <span class="type major">MAJOR</span>
+                                </td>
+                                <td>[visite_lab.conf] unsupported codec. Payload Type 31</td>
+                                <td>
+                                    <a href="">
+                                        <i class="fa fa-eye"></i> INVITE
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a href="" class="btn btn-below">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="text-center">
+                                    <span class="type minor">MINOR</span>
+                                </td>
+                                <td>[visite_lab.conf] unsupported codec. Payload Type 31</td>
+                                <td>
+                                    <a href="">
+                                        <i class="fa fa-eye"></i> INVITE
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a href="" class="btn btn-below">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="text-center">
+                                    <span class="type minor">MINOR</span>
+                                </td>
+                                <td>[visite_lab.conf] unsupported codec. Payload Type 31</td>
+                                <td>
+                                    <a href="">
+                                        <i class="fa fa-eye"></i> INVITE
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a href="" class="btn btn-below">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="text-center">
+                                    <span class="type minor">MINOR</span>
+                                </td>
+                                <td>[visite_lab.conf] unsupported codec. Payload Type 31</td>
+                                <td>
+                                    <a href="">
+                                        <i class="fa fa-eye"></i> INVITE
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a href="" class="btn btn-below">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="text-center">
+                                    <span class="type warn">WARNING</span>
+                                </td>
+                                <td>[visite_lab.conf] unsupported codec. Payload Type 31</td>
+                                <td>
+                                    <a href="">
+                                        <i class="fa fa-eye"></i> INVITE
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a href="" class="btn btn-below">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="text-center">
+                                    <span class="type warn">WARNING</span>
+                                </td>
+                                <td>[visite_lab.conf] unsupported codec. Payload Type 31</td>
+                                <td>
+                                    <a href="">
+                                        <i class="fa fa-eye"></i> INVITE
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a href="" class="btn btn-below">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="text-center">
+                                    <span class="type warn">WARNING</span>
+                                </td>
+                                <td>[visite_lab.conf] unsupported codec. Payload Type 31</td>
+                                <td>
+                                    <a href="">
+                                        <i class="fa fa-eye"></i> INVITE
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a href="" class="btn btn-below">
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="tab_2">
+                    <div class="callgraph-zone">
+                        <div class="error-zone">
+                            <div class="head">Errors</div>
+                            <div class="error">
+                                <a class="major" href="javascript:" data-toggle="popover" data-content="<span>Major</span><div>[visite_lab.conf] unsupported codec. Payload Type 31</div>"></a>
+                            </div>
+                            <div class="error">
+                                <a class="major" href="javascript:" data-toggle="popover" data-content="<span>Major</span><div>[visite_lab.conf] unsupported codec. Payload Type 31</div>"></a>
+                            </div>
+                            <div class="error">
+                                <a class="minor" href="javascript:" data-toggle="popover" data-content="<span>Minor</span><div>[visite_lab.conf] unsupported codec. Payload Type 31</div>"></a>
+                            </div>
+                            <div class="error">
+                                <a class="minor" href="javascript:" data-toggle="popover" data-content="<span>Minor</span><div>[visite_lab.conf] unsupported codec. Payload Type 31</div>"></a>
+                            </div>
+                            <div class="error">
+                                <a class="minor" href="javascript:" data-toggle="popover" data-content="<span>Minor</span><div>[visite_lab.conf] unsupported codec. Payload Type 31</div>"></a>
+                            </div>
+                            <div class="error">
+                                <a class="warning" href="javascript:" data-toggle="popover" data-content="<span>Warning</span><div>[visite_lab.conf] unsupported codec. Payload Type 31</div>"></a>
+                            </div>
+                            <div class="error">
+                                <a class="warning" href="javascript:" data-toggle="popover" data-content="<span>Warning</span><div>[visite_lab.conf] unsupported codec. Payload Type 31</div>"></a>
+                            </div>
+                            <div class="error">
+                                <a class="warning" href="javascript:" data-toggle="popover" data-content="<span>Warning</span><div>[visite_lab.conf] unsupported codec. Payload Type 31</div>"></a>
+                            </div>
+                        </div>
+                        <div class="callgraph-tab">
+                            <table id="call-graph-table" width="100%;" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr bgcolor="#DDDDDD">
+                                        <th width="20">Time</th>
+                                        <th width="20"></th>
+                                        <th style="padding-top:5px;padding-bottom:5px;" width="120">ACTA_dev31</th>
+                                        <th style="padding-top:5px;padding-bottom:5px;" width="120">6.3.19.3</th>
+                                        <th>Comment</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#0.000000000">0.000</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left_no.gif">
+                                            <img src="../../../../../images/callgraph/right.gif">5060</td>
+                                        <td bgcolor="orange">
+                                            <a href="#" onclick="visibility('0.000000000');return(false)">
+                                                <b>INVITE</b>
+                                            </a>
+                                            <b>(SDP G711A[20ms], 9[20ms], G729[20ms], DTMF[101ms], 6.4.15.31:9458)</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="0.000000000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">INVITE sip:3191105@6.3.19.3;user=phone;transport=UDP SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.4.15.31:5060;branch=z9hG4bK5th4GJjryPNbMeUlH1iXLgS</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=68OHr5wvhugiJW9sLVFA</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:3191105@6.3.19.3;user=phone&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: RmcUajFl2tSMbfkEKeZ3TNu5YLgdWsGnDC1Ay96h</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 0 INVITE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Contact: &lt;sip:0299000001@6.4.15.31:5060;transport=UDP&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Privacy: none</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Diversion: "foo" &lt;sip:foo@nowhere.com&gt;reason=no-answer;counter=1;privacy=off</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Allow: ACK,BYE,CANCEL,INVITE,OPTIONS,NOTIFY,UPDATE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Accept: application/sdp,application/isup,application/xml,multipart/mixed</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Max-Forwards: 70</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Type: application/sdp</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 282</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">v=0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">o=ACTa1 38456027 3845602780 IN IP4 6.4.15.31</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">s=Session SDP</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">c=IN IP4 6.4.15.31</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">t=0 0</td>
+                                                    </tr>
+                                                    <tr style="color:orange">
+                                                        <td bgcolor="#F5BCA9">
+                                                            <b>m=audio 9458 RTP/AVP 8 9 18 101</b>
+                                                        </td>
+                                                        <td>
+                                                            <b>
+                                                                <div class="tooltip">Warning (More...)
+                                                                    <div class="container-tooltiptext">
+                                                                        <div class="tooltiptext" style="color:orange">
+                                                                            <ul style="margin:0px;padding-left:15px;">
+                                                                                <li>
+                                                                                    <span style="color:orange;font-weight:bold;">[visit_lab.conf] unsupported codec Payload
+                                                                                        Type 9</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=rtpmap:8 PCMA/8000</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=rtpmap:9 G722/8000</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=rtpmap:18 G729/8000.xml</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=fmtp:18 annexb=no</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=rtpmap:101 telephone-event/8000</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=fmtp:101 0-15</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=ptime:20</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#0.001522000">0.002</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left.gif">
+                                            <img src="../../../../../images/callgraph/right_no.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('0.001522000');return(false)">
+                                                <b>100</b>
+                                            </a>
+                                            <b>&lt;INVITE&gt;</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="0.001522000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">100 Trying SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:3191105@6.3.19.3;user=phone&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=68OHr5wvhugiJW9sLVFA</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: RmcUajFl2tSMbfkEKeZ3TNu5YLgdWsGnDC1Ay96h</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 0 INVITE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.4.15.31:5060;branch=z9hG4bK5th4GJjryPNbMeUlH1iXLgS</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#0.004358000">0.004</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left.gif">
+                                            <img src="../../../../../images/callgraph/right_no.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('0.004358000');return(false)">
+                                                <b>180</b>
+                                            </a>
+                                            <b>&lt;INVITE&gt;</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="0.004358000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">180 Ringing SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Allow: INVITE, ACK, CANCEL, BYE, PRACK, NOTIFY, SUBSCRIBE, OPTIONS,
+                                                            UPDATE
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Contact: sip:6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">User-Agent: OmniPCX Enterprise R12.1 m2.300.13.i</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=8a0bb3909a0682e736610ce49fe76381</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=68OHr5wvhugiJW9sLVFA</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: RmcUajFl2tSMbfkEKeZ3TNu5YLgdWsGnDC1Ay96h</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 0 INVITE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.4.15.31:5060;branch=z9hG4bK5th4GJjryPNbMeUlH1iXLgS</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#5.112621000">5.113</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left.gif">
+                                            <img src="../../../../../images/callgraph/right_no.gif">5060</td>
+                                        <td bgcolor="red">
+                                            <a href="#" onclick="visibility('5.112621000');return(false)">
+                                                <b>INVITE</b>
+                                            </a>
+                                            <b>(SDP G711A[20ms], G729[20ms], DTMF[101ms], 6.4.15.31:9458)</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="5.112621000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404">INVITE sip:0299000002@6.4.15.31;user=phone SIP/2.0</td>
+                                                        <td style="color:red">
+                                                            <b>
+                                                                <div class="tooltip">Major (More...)
+                                                                    <div class="container-tooltiptext">
+                                                                        <div class="tooltiptext" style="color:red">[visit_lab.conf] missing content : header 'allow'
+                                                                            should at least contain 'UPDATE'</div>
+                                                                    </div>
+                                                                </div>
+                                                            </b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Allow: INVITE, ACK, CANCEL, BYE, PRACK, NOTIFY, SUBSCRIBE, OPTIONS,
+                                                            INFO
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Supported: timer,path,100rel</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">User-Agent: OmniPCX Enterprise R12.1 m2.300.13.i</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Session-Expires: 180;refresher=uac</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Min-SE: 90</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">P-Asserted-Identity: "3191105 Poste DRI" &lt;sip:3191105@6.3.19.3;user=phone&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Type: application/sdp</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:0299000002@6.4.15.31;user=phone&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: "3191105 Poste DRI" &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=cb157b4bdbbbc775870b00c672c3cbff</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Contact: &lt;sip:3191105@6.3.19.3;transport=UDP&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: 6fdf4d99c0c6c61eeea511786e9f0edd@6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 154348170 INVITE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.3.19.3;branch=z9hG4bK44b8b304a9a0a05a4654d1630c0fc9ab</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Max-Forwards: 70</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 255</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">v=0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">o=OXE 1516889771 1516889771 IN IP4 6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">s=abs</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">c=IN IP4 6.4.15.31</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">t=0 0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">m=audio 9458 RTP/AVP 8 18 101</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=sendrecv</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=rtpmap:8 PCMA/8000</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=rtpmap:18 G729/8000</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=fmtp:18 annexb=no</td>
+                                                    </tr>
+                                                    <tr style="color:#FA8258">
+                                                        <td bgcolor="#F5BCA9">
+                                                            <b>a=rtpmap:101 telephone-event/8000</b>
+                                                        </td>
+                                                        <td>
+                                                            <b>
+                                                                <div class="tooltip">Minor (More...)
+                                                                    <div class="container-tooltiptext">
+                                                                        <div class="tooltiptext" style="color:#FA8258">
+                                                                            <ul style="margin:0px;padding-left:15px;">
+                                                                                <li>
+                                                                                    <span style="color:#FA8258;font-weight:bold;">missing fmtp attribute line for telephone-event</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=ptime:20</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=maxptime:40</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#5.160833000">5.161</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left_no.gif">
+                                            <img src="../../../../../images/callgraph/right.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('5.160833000');return(false)">
+                                                <b>100</b>
+                                            </a>
+                                            <b>&lt;INVITE&gt;</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="5.160833000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">100 Trying SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.3.19.3;branch=z9hG4bK44b8b304a9a0a05a4654d1630c0fc9ab</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:0299000002@6.4.15.31;user=phone&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: "3191105 Poste DRI" &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=cb157b4bdbbbc775870b00c672c3cbff</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: 6fdf4d99c0c6c61eeea511786e9f0edd@6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 154348170 INVITE</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#5.162535000">5.163</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left_no.gif">
+                                            <img src="../../../../../images/callgraph/right.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('5.162535000');return(false)">
+                                                <b>180</b>
+                                            </a>
+                                            <b>&lt;INVITE&gt;</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="5.162535000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">180 Ringing SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.3.19.3;branch=z9hG4bK44b8b304a9a0a05a4654d1630c0fc9ab</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: "3191105 Poste DRI" &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=cb157b4bdbbbc775870b00c672c3cbff</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=HSgJwP67qh1CNG4pTfEo</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: 6fdf4d99c0c6c61eeea511786e9f0edd@6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 154348170 INVITE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Contact: &lt;sip:0299000002@6.4.15.31:5060&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Type: application/sdp</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Accept: application/sdp,application/isup,application/xml,multipart/mixed,application/vnd.orange.indata</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Allow: INVITE, ACK, BYE, CANCEL, PRACK, INFO, UPDATE, NOTIFY,OPTIONS</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#5.165412000">5.165</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left.gif">
+                                            <img src="../../../../../images/callgraph/right_no.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('5.165412000');return(false)">
+                                                <b>181</b>
+                                            </a>
+                                            <b>&lt;INVITE&gt;</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="5.165412000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">181 Forwarded SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Allow: INVITE, ACK, CANCEL, BYE, PRACK, NOTIFY, SUBSCRIBE, OPTIONS,
+                                                            UPDATE
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Contact: sip:6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">User-Agent: OmniPCX Enterprise R12.1 m2.300.13.i</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=8a0bb3909a0682e736610ce49fe76381</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=68OHr5wvhugiJW9sLVFA</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: RmcUajFl2tSMbfkEKeZ3TNu5YLgdWsGnDC1Ay96h</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 0 INVITE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.4.15.31:5060;branch=z9hG4bK5th4GJjryPNbMeUlH1iXLgS</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#12.166273000">12.166</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left_no.gif">
+                                            <img src="../../../../../images/callgraph/right.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('12.166273000');return(false)">
+                                                <b>200</b>
+                                            </a>
+                                            <b>(SDP G711A[20ms], DTMF[101ms], 6.4.15.31:57698) &lt;INVITE&gt;</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="12.166273000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">200 OK SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.3.19.3;branch=z9hG4bK44b8b304a9a0a05a4654d1630c0fc9ab</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: "3191105 Poste DRI" &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=cb157b4bdbbbc775870b00c672c3cbff</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=HSgJwP67qh1CNG4pTfEo</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: 6fdf4d99c0c6c61eeea511786e9f0edd@6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 154348170 INVITE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Contact: &lt;sip:6.4.15.31:5060&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Type: application/sdp</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Accept: application/sdp,application/isup,application/xml,multipart/mixed,application/vnd.orange.indata</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Allow: INVITE, ACK, BYE, CANCEL, PRACK, INFO, UPDATE, NOTIFY,OPTIONS</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 231</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">v=0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">o=ACTa2 38455471 3845547340 IN IP4 6.4.15.31</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">s=-</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">c=IN IP4 6.4.15.31</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">t=0 0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">m=audio 57698 RTP/AVP 8 101</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=rtpmap:8 PCMA/8000</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=fmtp:18 annexb=no</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=rtpmap:101 telephone-event/8000</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=fmtp:101 0-15</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=ptime:20</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=ptime:20</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#12.168985000">12.169</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left.gif">
+                                            <img src="../../../../../images/callgraph/right_no.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('12.168985000');return(false)">
+                                                <b>ACK</b>
+                                            </a>
+                                            <b></b>
+                                        </td>
+                                    </tr>
+                                    <tr id="12.168985000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">ACK sip:6.4.15.31:5060 SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Contact: &lt;sip:3191105@6.3.19.3;transport=UDP&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">User-Agent: OmniPCX Enterprise R12.1 m2.300.13.i</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=HSgJwP67qh1CNG4pTfEo</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: "3191105 Poste DRI" &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=cb157b4bdbbbc775870b00c672c3cbff</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: 6fdf4d99c0c6c61eeea511786e9f0edd@6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 154348170 ACK</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.3.19.3;branch=z9hG4bK649d65c72dddc5507eaefe9348dd77b5</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Max-Forwards: 70</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#12.169469000">12.169</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left.gif">
+                                            <img src="../../../../../images/callgraph/right_no.gif">5060</td>
+                                        <td bgcolor="#FA8258">
+                                            <a href="#" onclick="visibility('12.169469000');return(false)">
+                                                <b>200</b>
+                                            </a>
+                                            <b>(SDP G711A[20ms], DTMF[101ms], 6.4.15.31:57698) &lt;INVITE&gt;</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="12.169469000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">200 OK SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Allow: INVITE, ACK, CANCEL, BYE, PRACK, NOTIFY, SUBSCRIBE, OPTIONS,
+                                                            UPDATE
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Contact: sip:6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Supported: timer,path,100rel</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">User-Agent: OmniPCX Enterprise R12.1 m2.300.13.i</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Session-Expires: 180;refresher=uas</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">P-Asserted-Identity: &lt;sip:0299000002@6.3.19.3;user=phone&gt;</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Type: application/sdp</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=8a0bb3909a0682e736610ce49fe76381</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=68OHr5wvhugiJW9sLVFA</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: RmcUajFl2tSMbfkEKeZ3TNu5YLgdWsGnDC1Ay96h</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 0 INVITE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.4.15.31:5060;branch=z9hG4bK5th4GJjryPNbMeUlH1iXLgS</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 209</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">v=0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">o=OXE 1516889766 1516889766 IN IP4 6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">s=abs</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">c=IN IP4 6.4.15.31</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">t=0 0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">m=audio 57698 RTP/AVP 8 101</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=sendrecv</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=rtpmap:8 PCMA/8000</td>
+                                                    </tr>
+                                                    <tr style="color:#FA8258">
+                                                        <td bgcolor="#F5BCA9">
+                                                            <b>a=rtpmap:101 telephone-event/8000</b>
+                                                        </td>
+                                                        <td>
+                                                            <b>
+                                                                <div class="tooltip">Minor (More...)
+                                                                    <div class="container-tooltiptext">
+                                                                        <div class="tooltiptext" style="color:#FA8258">
+                                                                            <ul style="margin:0px;padding-left:15px;">
+                                                                                <li>
+                                                                                    <span style="color:#FA8258;font-weight:bold;">missing fmtp attribute line for telephone-event</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=ptime:20</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5BCA9">a=maxptime:30</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#12.217164000">12.217</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left_no.gif">
+                                            <img src="../../../../../images/callgraph/right.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('12.217164000');return(false)">
+                                                <b>ACK</b>
+                                            </a>
+                                            <b></b>
+                                        </td>
+                                    </tr>
+                                    <tr id="12.217164000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">ACK sip:6.3.19.3:5060 SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.4.15.31:5060;branch=z9hG4bK5th4GJjryPNbMeUlH1iXLgS</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=8a0bb3909a0682e736610ce49fe76381</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=68OHr5wvhugiJW9sLVFA</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: RmcUajFl2tSMbfkEKeZ3TNu5YLgdWsGnDC1Ay96h</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 0 ACK</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Max-Forwards: 70</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#12.261309000">12.261</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9">START1:</td>
+                                        <td bgcolor="#F3E2A9" colspan="1" style="text-align:center;">9458
+                                            <img src="../../../../../images/callgraph/d_left.gif">
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="orange">
+                                            <a href="#" onclick="visibility('12.261309000');return(false)">
+                                                <b>RTP</b>
+                                            </a>
+                                            <b>G.711 PCMA, 20 ms</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="12.261309000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr style="color:orange">
+                                                        <td>
+                                                            <b>Warning no RTCP</b>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#12.281314000">12.281</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9">START2:</td>
+                                        <td bgcolor="#F3E2A9" colspan="1" style="text-align:center;">57698
+                                            <img src="../../../../../images/callgraph/d_left.gif">
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="orange">
+                                            <a href="#" onclick="visibility('12.281314000');return(false)">
+                                                <b>RTP</b>
+                                            </a>
+                                            <b>G.711 PCMA, 20 ms</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="12.281314000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr style="color:orange">
+                                                        <td>
+                                                            <b>Warning no RTCP</b>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#27.230341000">27.230</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9">STOP1:</td>
+                                        <td bgcolor="#F3E2A9" colspan="1" style="text-align:center;">9458
+                                            <img src="../../../../../images/callgraph/d_left.gif">
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('27.230341000');return(false)">
+                                                <b></b>
+                                            </a>
+                                            <b>750 packets, duration: 14969 ms, no RTCP</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="27.230341000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr style="color:black">
+                                                        <td>No more information for this RTP packet</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#27.261608000">27.262</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9">STOP2:</td>
+                                        <td bgcolor="#F3E2A9" colspan="1" style="text-align:center;">57698
+                                            <img src="../../../../../images/callgraph/d_left.gif">
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('27.261608000');return(false)">
+                                                <b></b>
+                                            </a>
+                                            <b>750 packets, duration: 14980 ms, no RTCP</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="27.261608000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr style="color:black">
+                                                        <td>No more information for this RTP packet</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#27.311440000">27.311</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left_no.gif">
+                                            <img src="../../../../../images/callgraph/right.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('27.311440000');return(false)">
+                                                <b>BYE</b>
+                                            </a>
+                                            <b>with reason:'Q.850; cause=16'</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="27.311440000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">BYE sip:6.3.19.3:5060 SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.4.15.31:5060;branch=z9hG4bKbN9Md80yfm1k3rSAuCJoxeZ</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=8a0bb3909a0682e736610ce49fe76381</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=68OHr5wvhugiJW9sLVFA</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: RmcUajFl2tSMbfkEKeZ3TNu5YLgdWsGnDC1Ay96h</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 1 BYE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Max-Forwards: 70</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Reason: Q.850; cause=16</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#28.778988000">28.779</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left.gif">
+                                            <img src="../../../../../images/callgraph/right_no.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('28.778988000');return(false)">
+                                                <b>BYE</b>
+                                            </a>
+                                            <b></b>
+                                        </td>
+                                    </tr>
+                                    <tr id="28.778988000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">BYE sip:6.4.15.31:5060 SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Supported: timer,path,100rel</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">User-Agent: OmniPCX Enterprise R12.1 m2.300.13.i</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=HSgJwP67qh1CNG4pTfEo</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=cb157b4bdbbbc775870b00c672c3cbff</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: 6fdf4d99c0c6c61eeea511786e9f0edd@6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 154348171 BYE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.3.19.3;branch=z9hG4bKe2777c0c85938f1169c8dd0756cd6ffe</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Max-Forwards: 70</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#28.792858000">28.793</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left_no.gif">
+                                            <img src="../../../../../images/callgraph/right.gif">5060</td>
+                                        <td bgcolor="">
+                                            <a href="#" onclick="visibility('28.792858000');return(false)">
+                                                <b>200</b>
+                                            </a>
+                                            <b>&lt;BYE&gt;</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="28.792858000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404" style="color:black">200 OK SIP/2.0</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.3.19.3;branch=z9hG4bKe2777c0c85938f1169c8dd0756cd6ffe</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=cb157b4bdbbbc775870b00c672c3cbff</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=HSgJwP67qh1CNG4pTfEo</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: 6fdf4d99c0c6c61eeea511786e9f0edd@6.3.19.3</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 154348171 BYE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a name="#30.793042000">30.793</a>
+                                        </td>
+                                        <td bgcolor="#F3E2A9"></td>
+                                        <td bgcolor="#F3E2A9" colspan="2" style="text-align:center;">5060
+                                            <img src="../../../../../images/callgraph/left.gif">
+                                            <img src="../../../../../images/callgraph/right_no.gif">5060</td>
+                                        <td bgcolor="red">
+                                            <a href="#" onclick="visibility('30.793042000');return(false)">
+                                                <b>200</b>
+                                            </a>
+                                            <b>&lt;BYE&gt;</b>
+                                        </td>
+                                    </tr>
+                                    <tr id="30.793042000" style="display:none;">
+                                        <td></td>
+                                        <td colspan="4">
+                                            <table id="message-table" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor="#5FB404">200 OK SIP/2.0</td>
+                                                        <td style="color:red">
+                                                            <b>
+                                                                <div class="tooltip">Major (More...)
+                                                                    <div class="container-tooltiptext">
+                                                                        <div class="tooltiptext" style="color:red">[visit_lab.conf] too many time before response: 200
+                                                                            sent after 3482 ms in response to BYE</div>
+                                                                    </div>
+                                                                </div>
+                                                            </b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Allow: INVITE, ACK, CANCEL, BYE, PRACK, NOTIFY, SUBSCRIBE, OPTIONS,
+                                                            UPDATE
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Supported: timer,path,100rel</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">User-Agent: OmniPCX Enterprise R12.1 m2.300.13.i</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">To: &lt;sip:3191105@6.3.19.3;user=phone&gt;;tag=8a0bb3909a0682e736610ce49fe76381</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">From: &lt;sip:0299000002@6.4.15.31;user=phone&gt;;tag=68OHr5wvhugiJW9sLVFA</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Call-ID: RmcUajFl2tSMbfkEKeZ3TNu5YLgdWsGnDC1Ay96h</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">CSeq: 1 BYE</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Via: SIP/2.0/UDP 6.4.15.31:5060;branch=z9hG4bKbN9Md80yfm1k3rSAuCJoxeZ</td>
+                                                    </tr>
+                                                    <tr style="color:">
+                                                        <td bgcolor="#F5ECCE">Content-Length: 0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="clear: left"></div>
+                    </div>
+                    <div style="clear: left"></div>
+                </div>
+                <div class="tab-pane" id="tab_3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

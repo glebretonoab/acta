@@ -1,0 +1,23 @@
+.skin-acta {
+    .content {
+        .panel {
+            margin-bottom: 0;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            >.panel-heading {
+                background-color: #4a83a1;
+                color: white;
+            }
+            .panel-body {
+                background-color: #fdfdfd;
+                color: #1e282c;
+                padding: 20px 30px;
+                .graph-description {
+                    max-height: 350px;
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+}

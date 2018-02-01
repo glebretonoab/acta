@@ -1,0 +1,842 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h3 class="acta-title">Manage reporting</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#tab_1" id="tab_1_link" data-toggle="tab">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab_2" id="tab_2_link" data-toggle="tab">
+                        <i class="fa fa-edit"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab_3" id="tab_3_link" data-toggle="tab">
+                        <i class="fa fa-plus fa-1x" aria-hidden="true"></i> New reporting
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_1">
+                    <div class="box box-filter box-default">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">
+                                <i class="fa fa-filter" aria-hidden="true"></i> Filters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <form role="form" class="form form-horizontal">
+                                <div class="col-sm-8 col-lg-4">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 col-lg-3 control-label text-sm-left">Contributor</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control select2" data-placeholder="Select your contributor">
+                                                <option selected="selected">ALE</option>
+                                                <option>All</option>
+                                                <option>Asterik</option>
+                                                <option>Genesys</option>
+                                                <option>Mitel MV5000</option>
+                                                <option>ShoreTel</option>
+                                                <option>Transverse</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 col-lg-3 control-label text-sm-left">Start date</label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group date" data-provide="datepicker">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 col-lg-3 control-label text-sm-left">End date</label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group date" data-provide="datepicker">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-lg-2">
+                                    <button type="submit" class="btn btn-filter">Filter</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="box box-default box-datatable">
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table id="example1" class="table table-bordered table-striped dataTable dataTable-complete dataTable-complete-1" role="grid"
+                                        aria-describedby="example1_info">
+                                        <thead>
+                                            <tr role="row">
+                                                <th width="40px">ID</th>
+                                                <th>File name</th>
+                                                <th>Description</th>
+                                                <th></th>
+                                                <th width="50px">CallFlow</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="launchscript">
+                                                        <span class="badge">21400</span>
+                                                    </a>
+                                                </td>
+                                                <td>21400_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
+                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
+                                                <td>Out of dialog</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="launchscript">
+                                                        <span class="badge">21401</span>
+                                                    </a>
+                                                </td>
+                                                <td>21401_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
+                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
+                                                <td>Out of dialog</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="launchscript">
+                                                        <span class="badge">21402</span>
+                                                    </a>
+                                                </td>
+                                                <td>21402_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
+                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
+                                                <td>Out of dialog</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="launchscript">
+                                                        <span class="badge">21403</span>
+                                                    </a>
+                                                </td>
+                                                <td>21400_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
+                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
+                                                <td>Out of dialog</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1  text-center">
+                                                    <a href="javascript:" class="launchscript">
+                                                        <span class="badge">21404</span>
+                                                    </a>
+                                                </td>
+                                                <td>21401_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
+                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
+                                                <td>Out of dialog</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="launchscript">
+                                                        <span class="badge">21405</span>
+                                                    </a>
+                                                </td>
+                                                <td>21402_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
+                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
+                                                <td>Out of dialog</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1  text-center">
+                                                    <a href="javascript:" class="launchscript">
+                                                        <span class="badge">21406</span>
+                                                    </a>
+                                                </td>
+                                                <td>21401_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
+                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
+                                                <td>Every Major Release</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="launchscript">
+                                                        <span class="badge">21407</span>
+                                                    </a>
+                                                </td>
+                                                <td>21402_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
+                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
+                                                <td>Every Major Release</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>File name</th>
+                                                <th>Description</th>
+                                                <th></th>
+                                                <th>CallFlow</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab_2">
+                    <div class="box box-filter box-default">
+                        <div class="box-body">
+                            <div class="col-xs-10 col-sm-8 col-lg-6">
+                                <form class="form-horizontal form-detail">
+                                    <div class="form-group form-head">
+                                        <label class="col-sm-2 control-label">REPORTING</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control select2" data-placeholder="Select your catalog">
+                                                <option>Reporting 1</option>
+                                                <option>Reporting 2</option>
+                                                <option>Reporting 3</option>
+                                            </select>
+                                            <a href="" class="btn btn-default" data-toggle="modal" data-target="#modal-edit">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="" class="btn btn-other" data-toggle="modal" data-target="#modal-duplicate">
+                                                <i class="fa fa-clone" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="" class="btn btn-delete" data-toggle="modal" data-target="#modal-delete">
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="col-sm-2 control-label">Description</label>
+                                        <div class="col-sm-10">
+                                            <span class="info">Reporting 1 description</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="col-sm-2 control-label">User</label>
+                                        <div class="col-sm-10">
+                                            <span class="info">Admin</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xs-2 col-sm-4 col-lg-6 text-right">
+                                <a href="" class="btn btn-default btn-with-icon" data-toggle="modal" data-target="#modal-add-to-reporting">
+                                    <i class="fa fa-plus" aria-hidden="true"></i> Add to reporting
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /. filters -->
+
+                    <div class="box box-default box-datatable">
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table id="example1" class="table table-bordered table-striped dataTable dataTable-complete dataTable-complete-2" role="grid"
+                                        aria-describedby="example1_info">
+                                        <thead>
+                                            <tr role="row">
+                                                <th width="40px">ID</th>
+                                                <th>File name</th>
+                                                <th>Description</th>
+                                                <th width="100px"></th>
+                                                <th width="50px">CallFlow</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <span class="badge">10102</span>
+                                                </td>
+                                                <td>10102_BC24_outgoing_INVITE_200OK_SDP_send_REINVITE_withSDP.xml</td>
+                                                <td>[BC24: ACTa calls IPBX, establishes the call, then sends reINVITE with SDP</td>
+                                                <td>Basic-calls</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1 text-center">
+                                                    <span class="badge">10103</span>
+                                                </td>
+                                                <td>10103_BC22_incoming_INVITE_no18x_200OK_SDP.xml</td>
+                                                <td>[BC22: ACTa receives call from IPBX, does not send 18x</td>
+                                                <td>Basic-calls</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <span class="badge">10104</span>
+                                                </td>
+                                                <td>10104_BC23_incoming_INVITE_SDP_send_REINVITE_noSDP.xml</td>
+                                                <td>[BC23: ACTa receives call from IPBX establish the call, then sends reINVITE
+                                                    without SDP</td>
+                                                <td>Basic-calls</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <span class="badge">10200</span>
+                                                </td>
+                                                <td>10200_UPD01_outgoing_empty_update_early_dialog.xml</td>
+                                                <td>[UPD01: ACTa calls [Phone number] with SDP and sends empty UPDATE after 180</td>
+                                                <td>Update</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1  text-center">
+                                                    <span class="badge">10201</span>
+                                                </td>
+                                                <td>10201_UPD02_outgoing_empty_update_confirmed_dialog.xml</td>
+                                                <td>[UPD02: ACTa calls [Phone number] with SDP ,establishs call and sends empty
+                                                    UPDATE in confirmed dialog</td>
+                                                <td>Update</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <span class="badge">10202</span>
+                                                </td>
+                                                <td>10202_UPD03_outgoing_update_without_dialog_ended.xml</td>
+                                                <td>[UPD03: ACTa calls [Phone number] with SDP, establishes call, sends an UPDATE
+                                                    without SDP and expects an error re-INVITE
+                                                </td>
+                                                <td>Update</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1  text-center">
+                                                    <span class="badge">10300</span>
+                                                </td>
+                                                <td>10300_REINV02_outgoing_MOH_send_empty_reINVITE.xml</td>
+                                                <td>[re_INVITE02: ACTa calls [Phone number] with SDP , establishs call and sends
+                                                    reINVITE after 3s</td>
+                                                <td>re-INVITE</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <span class="badge">10301</span>
+                                                </td>
+                                                <td>10301_REINV03_outgoing_send_reINVITE_a=inactive_send_reINVITE_a=sendrecv.xml</td>
+                                                <td>[re_INVITE03 ACTa calls [Phone number] with SDP,establishs call ,then sends
+                                                    reINVITE after 3s with a=inactive and reINVITE after 3s with a=sendrecv</td>
+                                                <td>re-INVITE</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1  text-center">
+                                                    <span class="badge">10302</span>
+                                                </td>
+                                                <td>10302_REINV04_outgoing_send_reINVITE_a=sendonly_send_reINVITE_a=sendrecv.xml</td>
+                                                <td>[re_INVITE04 ACTa calls [Phone number] with SDP,establishs call ,then sends
+                                                    reINVITE after 3s with a=sendonly and reINVITE after 3s with a=sendrecv</td>
+                                                <td>re-INVITE</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>File name</th>
+                                                <th>Description</th>
+                                                <th></th>
+                                                <th>CallFlow</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab_3">
+                    <form class="form-horizontal form-new">
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="2" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Scripts</label>
+                                <div class="col-sm-10">
+                                    <label>PLEASE ADD YOUR SCRIPTS WITH THE BUTTON
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </label>
+                                    <div id="scripts_target" class="scripts_target"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-5 text-left">
+                            <a href="" class="btn btn-default btn-with-icon">
+                                <i class="fa fa-check" aria-hidden="true"></i> Add catalog
+                            </a>
+                        </div>
+                        <div style="clear: left"></div>
+                    </form>
+                    <div style="clear: left"></div>
+                    <div class="box box-filter box-default">
+                        <div class="box-body">
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <label for="exampleInputName2">Calls</label>
+                                    <select class="form-control">
+                                        <option>All</option>
+                                        <option selected>Outgoing calls</option>
+                                        <option>Incoming calls</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /. filters -->
+
+                    <div class="box box-default box-datatable">
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table id="example1" class="table table-bordered table-striped dataTable dataTable-complete dataTable-complete-4" role="grid"
+                                        aria-describedby="example1_info">
+                                        <thead>
+                                            <tr role="row">
+                                                <th width="20px"></th>
+                                                <th>File name</th>
+                                                <th>Description</th>
+                                                <th></th>
+                                                <th width="50px">CallFlow</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="add-script">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                                <td>10102_BC24_outgoing_INVITE_200OK_SDP_send_REINVITE_withSDP.xml</td>
+                                                <td>[BC24: ACTa calls IPBX, establishes the call, then sends reINVITE with SDP</td>
+                                                <td>Basic-calls</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="add-script">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                                <td>10103_BC22_incoming_INVITE_no18x_200OK_SDP.xml</td>
+                                                <td>[BC22: ACTa receives call from IPBX, does not send 18x</td>
+                                                <td>Basic-calls</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="add-script">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                                <td>10104_BC23_incoming_INVITE_SDP_send_REINVITE_noSDP.xml</td>
+                                                <td>[BC23: ACTa receives call from IPBX establish the call, then sends reINVITE
+                                                    without SDP</td>
+                                                <td>Basic-calls</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="add-script">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                                <td>10200_UPD01_outgoing_empty_update_early_dialog.xml</td>
+                                                <td>[UPD01: ACTa calls [Phone number] with SDP and sends empty UPDATE after 180</td>
+                                                <td>Update</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1  text-center">
+                                                    <a href="javascript:" class="add-script">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                                <td>10201_UPD02_outgoing_empty_update_confirmed_dialog.xml</td>
+                                                <td>[UPD02: ACTa calls [Phone number] with SDP ,establishs call and sends empty
+                                                    UPDATE in confirmed dialog</td>
+                                                <td>Update</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="add-script">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                                <td>10202_UPD03_outgoing_update_without_dialog_ended.xml</td>
+                                                <td>[UPD03: ACTa calls [Phone number] with SDP, establishes call, sends an UPDATE
+                                                    without SDP and expects an error re-INVITE
+                                                </td>
+                                                <td>Update</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1  text-center">
+                                                    <a href="javascript:" class="add-script">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                                <td>10300_REINV02_outgoing_MOH_send_empty_reINVITE.xml</td>
+                                                <td>[re_INVITE02: ACTa calls [Phone number] with SDP , establishs call and sends
+                                                    reINVITE after 3s</td>
+                                                <td>re-INVITE</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1 text-center">
+                                                    <a href="javascript:" class="add-script">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                                <td>10301_REINV03_outgoing_send_reINVITE_a=inactive_send_reINVITE_a=sendrecv.xml</td>
+                                                <td>[re_INVITE03 ACTa calls [Phone number] with SDP,establishs call ,then sends
+                                                    reINVITE after 3s with a=inactive and reINVITE after 3s with a=sendrecv</td>
+                                                <td>re-INVITE</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1  text-center">
+                                                    <a href="javascript:" class="add-script">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                                <td>10302_REINV04_outgoing_send_reINVITE_a=sendonly_send_reINVITE_a=sendrecv.xml</td>
+                                                <td>[re_INVITE04 ACTa calls [Phone number] with SDP,establishs call ,then sends
+                                                    reINVITE after 3s with a=sendonly and reINVITE after 3s with a=sendrecv</td>
+                                                <td>re-INVITE</td>
+                                                <td class="text-center">
+                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Edit Modal -->
+<div class="modal fade" id="modal-edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit reporting
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name" value="Reporting 1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Description</label>
+                        <textarea class="form-control" rows="3">Reporting 1 description</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">User</label>
+                        <select class="form-control select2">
+                            <option>Admin</option>
+                            <option>Transverse</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-modal-close" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-modal-ok" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Duplicate Modal -->
+<div class="modal fade" id="modal-duplicate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <i class="fa fa-clone" aria-hidden="true"></i> Duplicate reporting
+                </h4>
+            </div>
+            <div class="modal-body">
+                Do you want to duplicate this reporting?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-modal-yes" data-dismiss="modal">Yes</button>
+                <button type="button" class="btn btn-modal-no" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Modal -->
+<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <i class="fa fa-trash" aria-hidden="true"></i> Delete reporting
+                </h4>
+            </div>
+            <div class="modal-body">
+                Do you want to delete this reporting?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-modal-yes" data-dismiss="modal">Yes</button>
+                <button type="button" class="btn btn-modal-no" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add to reporting -->
+<div class="modal modal-list fade" id="modal-add-to-reporting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <i class="fa fa-plus" aria-hidden="true"></i> Add to reporting
+                </h4>
+            </div>
+            <div class="modal-body">
+                <table id="example1" class="table table-bordered table-striped dataTable dataTable-complete dataTable-complete-add-to-reporting"
+                    role="grid" aria-describedby="example1_info" width="100%">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>File name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr role="row" class="odd">
+                            <td></td>
+                            <td>10101_BC20_outgoing_INVITE_without_100rel.xml</td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td></td>
+                            <td>10102_BC24_outgoing_INVITE_200OK_SDP_send_REINVITE_withSDP.xml</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td></td>
+                            <td>10200_UPD01_outgoing_empty_update_early_dialog.xml</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td></td>
+                            <td>10201_UPD02_outgoing_empty_update_confirmed_dialog.xml</td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td></td>
+                            <td>10202_UPD03_outgoing_update_withotu_dialog_ended.xml</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td></td>
+                            <td>10101_BC20_outgoing_INVITE_without_100rel.xml</td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td></td>
+                            <td>10102_BC24_outgoing_INVITE_200OK_SDP_send_REINVITE_withSDP.xml</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td></td>
+                            <td>10200_UPD01_outgoing_empty_update_early_dialog.xml</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td></td>
+                            <td>10201_UPD02_outgoing_empty_update_confirmed_dialog.xml</td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td></td>
+                            <td>10202_UPD03_outgoing_update_withotu_dialog_ended.xml</td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td></td>
+                            <td>10202_UPD03_outgoing_update_withotu_dialog_ended.xml</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td></td>
+                            <td>10101_BC20_outgoing_INVITE_without_100rel.xml</td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td></td>
+                            <td>10102_BC24_outgoing_INVITE_200OK_SDP_send_REINVITE_withSDP.xml</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td></td>
+                            <td>10200_UPD01_outgoing_empty_update_early_dialog.xml</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td></td>
+                            <td>10201_UPD02_outgoing_empty_update_confirmed_dialog.xml</td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td></td>
+                            <td>10202_UPD03_outgoing_update_withotu_dialog_ended.xml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-modal-close" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-modal-ok" data-dismiss="modal">Update catalog</button>
+            </div>
+        </div>
+    </div>
+</div>

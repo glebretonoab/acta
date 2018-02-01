@@ -12,11 +12,13 @@
 
 @import '../styles/colors';
 @import '../styles/mixins';
+@import '../styles/wrapper';
 @import '../styles/signin';
-
-@import '../styles/skin-acta';
-@import '../styles/plugins';
+@import '../styles/footer';
+@import '../styles/header';
+@import '../styles/sidebar';
 @import '../styles/content';
+@import '../styles/plugins';
 @import '../styles/modal';
 
 html, body {

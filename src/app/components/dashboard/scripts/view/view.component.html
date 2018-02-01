@@ -15,7 +15,7 @@
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="tab_1">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div id="jstree_demo_div">
                             <ul>
                                 <li data-jstree='{"icon":"fa fa-folder-o"}'>ACTA
@@ -46,23 +46,33 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div id="editor" class="editor">
-                            <div ace-editor
-                                [(text)]="text"
-                                [mode]="'xml'"
-                                [theme]="'eclipse'"
-                                [options]="options"
-                                [readOnly]="true"
+                    <div class="col-md-9">
+                        <div id="editor_div" class="editor">
+                            <div class="filepath">
+                                <label>
+                                    <i class="fa fa-file-code-o"></i>Path
+                                </label>
+                                <div class="path">
+                                    /usr/acta/200/
+                                    <span></span>
+                                </div>
+                                <div style="clear:left"></div>
+                            </div>
+                            <div ace-editor 
+                                [(text)]="beautifyText" 
+                                [mode]="'xml'" 
+                                [theme]="'eclipse'" 
+                                [options]="options" 
+                                [readOnly]="true" 
                                 [autoUpdateContent]="true"
-                                [durationBeforeCallback]="1000"
-                                (textChanged)="onChange($event)"
+                                [durationBeforeCallback]="1000" 
+                                (textChanged)="onChange($event)" 
                                 style="min-height: 500px; width:100%; overflow: auto;"></div>
                         </div>
                     </div>
                     <div style="clear:left"></div>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
 </div>

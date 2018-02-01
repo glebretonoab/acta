@@ -10,6 +10,7 @@ import { Status } from '../../../models/status.model';
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
+  host: {'class': 'home'},
   styles: [require('./home.component.scss').toString()]
 })
 

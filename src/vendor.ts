@@ -23,10 +23,6 @@ import 'bootstrap-datepicker/dist/css/bootstrap-datepicker.min';
 import 'select2/dist/js/select2.min';
 import 'select2/dist/css/select2.min';
 
-// iCheck
-import 'admin-lte/plugins/iCheck/flat/blue';
-import 'admin-lte/plugins/iCheck/icheck.min';
-
 // ---------- datatables ----------
 import 'datatables.net/js/jquery.dataTables';
 
@@ -45,12 +41,15 @@ import 'datatables.net-rowgroup/js/dataTables.rowGroup.min';
 import 'datatables.net-bs/js/dataTables.bootstrap';
 import 'datatables.net-bs/css/dataTables.bootstrap';
 
+// Responsive
+import 'datatables.net-responsive-bs/js/responsive.bootstrap.min';
+import 'datatables.net-responsive-bs/css/responsive.bootstrap.min';
+
 // ---------- END datatables ----------
 
 // Ace editor
 import 'ace-builds/src-min-noconflict/ace';
 import 'ace-builds/src-min-noconflict/theme-eclipse';
-//import 'ace-builds/src-min-noconflict/mode-xml';
 import 'brace/mode/xml';
 
 // jsTree
