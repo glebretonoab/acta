@@ -31,7 +31,7 @@ export class ReportingManageComponent implements AfterViewInit {
         'selectAll',
         'selectNone',
         {
-          text: '<i class="fa fa-pencil-square" aria-hidden="true"></i> Update scripts',
+          text: '<i class="fa fa-file-excel-o" aria-hidden="true"></i> Save in XLS / CSV',
           action: function (e, dt, node, config) {
             alert('Button activated');
           }
@@ -39,14 +39,19 @@ export class ReportingManageComponent implements AfterViewInit {
       ],
       select: true,
       rowGroup: {
-        dataSrc: 3
+        dataSrc: 7
       },
-      "columnDefs": [
+      columnDefs: [
         { 
           visible: false, 
-          "targets": [3]
+          targets: [7]
+        },
+        { 
+          orderable: false, 
+          targets: 6 
         }
-      ]
+      ],
+      order: [[7, 'asc']],
     });
 
     jQuery('.dataTable tbody').on('click', 'tr', function () {
@@ -61,45 +66,21 @@ export class ReportingManageComponent implements AfterViewInit {
         'selectAll',
         'selectNone',
         {
-          text: '<i class="fa fa-trash" aria-hidden="true"></i> Delete scripts',
+          text: '<i class="fa fa-trash" aria-hidden="true"></i> Delete',
           className: 'delete',
-          action: function (e, dt, node, config) {
-            alert('Button activated');
-          }
-        },
-        {
-          text: '<i class="fa fa-file-excel-o" aria-hidden="true"></i> Save in XLS / CSV',
           action: function (e, dt, node, config) {
             alert('Button activated');
           }
         }
       ],
-      select: true,
-      rowGroup: {
-        dataSrc: 3
-      },
-      "columnDefs": [
-        { 
-          visible: false, 
-          "targets": [3]
-        }
-      ]
+      select: true
     });
 
     jQuery('.dataTable-complete-4').DataTable({
       dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
         "<'row'<'col-sm-12'tr>>" +
         "<'row'<'col-sm-5'p>>",
-      select: false,
-      rowGroup: {
-        dataSrc: 3
-      },
-      "columnDefs": [
-        { 
-          visible: false, 
-          "targets": [3]
-        }
-      ]
+      select: false
     });
 
     jQuery('.dataTable-complete-add-to-reporting').DataTable({
@@ -135,8 +116,12 @@ export class ReportingManageComponent implements AfterViewInit {
     });
 
     jQuery('.delete-script').click(function () {
-      console.log('delete');
       jQuery(this).parent().remove();
+    });
+
+    // Event
+    jQuery('a.link_tab2').click(function () {
+      jQuery('#tab_2_link').tab('show');
     });
   }
 }

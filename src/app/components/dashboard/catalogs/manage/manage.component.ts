@@ -21,10 +21,6 @@ export class CatalogManageComponent implements AfterViewInit {
   ngAfterViewInit() {
     // Select2
     jQuery('.select2').select2();
-    jQuery('.select2-multiple').select2MultiCheckboxes({
-      placeholder: "Select options",
-      width: "auto"
-    })
 
     // Datatables
     jQuery('.dataTable-complete-3').DataTable({

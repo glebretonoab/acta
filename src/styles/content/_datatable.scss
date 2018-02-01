@@ -2,6 +2,9 @@
     .content {
         .dataTable {
             width: 100% !important;
+            a {
+                text-decoration: underline;
+            }
             .status-ok,
             .status-ko {
                 font-weight: 600;

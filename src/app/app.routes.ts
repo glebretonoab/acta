@@ -25,7 +25,7 @@ export const ROUTES: Routes = [
       { path: 'tests/analysis', component: AnalysisComponent },
       { path: 'scripts/view', component: ViewComponent },
       { path: 'catalogs/manage', component: CatalogManageComponent },
-      { path: 'reporting/manage', component: ReportingManageComponent }
+      { path: 'reporting/manage', component: ReportingManageComponent } 
     ]
   },
   { path: '', component: LoginComponent }
