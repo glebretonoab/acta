@@ -5,8 +5,6 @@
             box-shadow: none;
             border-top: none;
             &.box-acta-info {
-                /*border: 1px solid #d2d6de;
-                border-radius: 5px;*/
                 margin-bottom: 0;
                 
                 .box-header {
@@ -18,7 +16,31 @@
                     border-bottom: 1px solid #d2d6de;
                     border-left: 1px solid #d2d6de;
                     border-right: 1px solid #d2d6de;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
                     padding-bottom: 0px;
+                }
+
+                &.box-acta-info-light {
+                    .box-header {
+                        padding: 5px 15px;
+                        text-transform: uppercase;
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                    .box-body {
+                        padding: 0;
+
+                        .dataTable {
+                            margin-top: 0 !important;
+                            margin-bottom: 0 !important;
+
+                            thead th, tbody td {
+                                padding: 4px 8px;
+                            }
+                        }
+                    }
                 }
             }
             &.box-filter {

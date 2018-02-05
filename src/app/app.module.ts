@@ -26,6 +26,8 @@ import { ViewComponent } from './components/dashboard/scripts/view/view.componen
 import { CatalogManageComponent } from './components/dashboard/catalogs/manage/manage.component';
 import { ReportingManageComponent } from './components/dashboard/reporting/manage/manage.component';
 import { NumberingComponent } from './components/dashboard/network/numbering/numbering.component';
+import { ConfigurationComponent } from './components/dashboard/network/configuration/configuration.component';
+import { ServerStatusComponent } from './components/dashboard/admin/server/status.component';
 
 // Services
 import { StatusService } from './services/status.service';
@@ -50,7 +52,9 @@ import { StatusService } from './services/status.service';
     ViewComponent,
     CatalogManageComponent,
     ReportingManageComponent,
-    NumberingComponent
+    NumberingComponent,
+    ConfigurationComponent,
+    ServerStatusComponent
   ],
   providers: [
     Configuration,

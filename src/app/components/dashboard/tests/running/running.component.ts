@@ -23,9 +23,9 @@ export class RunningComponent implements AfterViewInit {
   ngAfterViewInit() {
     // Datatables.net
     jQuery('.dataTable-complete-2').DataTable({
-      dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
-        "<'row'<'col-sm-12'tr>>" +
-        "<'row'<'col-sm-5'p><'col-sm-7'B>>",
+      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
+        '<\'row\'<\'col-sm-12\'tr>>' +
+        '<\'row\'<\'col-sm-5\'p><\'col-sm-7\'B>>',
       buttons: [
         'selectAll',
         'selectNone',
@@ -51,7 +51,7 @@ export class RunningComponent implements AfterViewInit {
     });
 
     jQuery('.dataTable-ligth').DataTable({
-      dom: "t",
+      dom: 't',
       columnDefs: [
         { orderable: true, targets: 1 },
         { orderable: false, targets: '_all' }

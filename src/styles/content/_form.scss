@@ -56,6 +56,22 @@
                 font-weight: 600;
                 color: red;
             }
+
+            &.form-info-light {
+                padding: 0 0;
+
+                .form-group {
+                    margin-bottom: 5px;
+
+                    &:first-child {
+                        margin-top: 10px;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
         }
         .form-detail {
             .form-group {

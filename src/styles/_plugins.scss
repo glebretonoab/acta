@@ -186,7 +186,6 @@
         i.fa-file-code-o {
             color: #1485cc;
         }
-
         &.jstree-default .jstree-clicked {
             background: white;
             border: 1px solid #1485cc;
@@ -197,25 +196,31 @@
     } // Editor
     .editor {
         display: none;
-
         .filepath {
             border: 1px solid #1485cc;
             margin-bottom: 10px;
-
-            label, .path {
+            label,
+            .path {
                 float: left;
+            }
+            label,
+            .path,
+            .close_config {
                 padding: 0 10px;
             }
-
             label {
                 margin-bottom: 0;
                 background-color: #1485cc;
                 color: white;
                 font-weight: normal;
-
                 i {
                     margin-right: 5px;
                 }
+            }
+            .close_config {
+                float: right;
+                background: red;
+                color: white;
             }
         }
     }

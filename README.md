@@ -6,10 +6,10 @@
 ```bash
 # clone our repo
 # --depth 1 removes all but one .git commit history
-git clone --depth 1 http://vsi-git-001.siradel.local/S_Un/acta_prototype.git
+git clone git@git-oab.si.fr.intraorange:EQT1314701A/acta-new-design.git
 
 # change directory to our repo
-cd acta_prototype
+cd acta-new-design
 
 # install Yarn
 npm install --global yarn

@@ -7,12 +7,12 @@ import { Configuration } from '../../../../app.configuration';
 declare var jQuery: any;
 
 @Component({
-  selector: 'analysis',
-  templateUrl: './analysis.component.html',
-  styles: [require('./analysis.component.scss').toString()]
+  selector: 'status',
+  templateUrl: './status.component.html',
+  styles: [require('./status.component.scss').toString()]
 })
 
-export class AnalysisComponent implements AfterViewInit {
+export class ServerStatusComponent implements AfterViewInit {
 
   constructor(
     private configuration: Configuration
@@ -31,11 +31,11 @@ export class AnalysisComponent implements AfterViewInit {
       ]
     });
     
-    // Bootstrap Popover
-    jQuery('[data-toggle="popover"]').popover({
+    // Bootstrap Tooltip
+    jQuery('[data-toggle="tooltip"]').tooltip({
       html: true,
       trigger: 'hover',
-      placement: 'right'
+      placement: 'bottom'
     });
   }
 }

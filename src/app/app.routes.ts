@@ -12,6 +12,8 @@ import { ViewComponent } from './components/dashboard/scripts/view/view.componen
 import { CatalogManageComponent } from './components/dashboard/catalogs/manage/manage.component';
 import { ReportingManageComponent } from './components/dashboard/reporting/manage/manage.component';
 import { NumberingComponent } from './components/dashboard/network/numbering/numbering.component';
+import { ConfigurationComponent } from './components/dashboard/network/configuration/configuration.component';
+import { ServerStatusComponent } from './components/dashboard/admin/server/status.component';
 
 export const ROUTES: Routes = [
   {
@@ -27,7 +29,10 @@ export const ROUTES: Routes = [
       { path: 'scripts/view', component: ViewComponent },
       { path: 'catalogs/manage', component: CatalogManageComponent },
       { path: 'reporting/manage', component: ReportingManageComponent },
-      { path: 'network/numbering', component: NumberingComponent }
+      { path: 'network/numbering', component: NumberingComponent },
+      { path: 'network/configuration', component: ConfigurationComponent },
+      { path: 'admin/serverstatus', component: ServerStatusComponent }
+
     ]
   },
   { path: '', component: LoginComponent }

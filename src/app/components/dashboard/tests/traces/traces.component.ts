@@ -21,9 +21,9 @@ export class TracesComponent implements AfterViewInit {
   ngAfterViewInit() {
     // Datatables
     jQuery('.dataTable-complete-1').DataTable({
-      dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
-        "<'row'<'col-sm-12'tr>>" +
-        "<'row'<'col-sm-5'p><'col-sm-7'B>>",
+      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
+        '<\'row\'<\'col-sm-12\'tr>>' +
+        '<\'row\'<\'col-sm-5\'p><\'col-sm-7\'B>>',
       buttons: [
         'selectAll',
         'selectNone',

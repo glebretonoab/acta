@@ -51,6 +51,7 @@ import 'datatables.net-responsive-bs/css/responsive.bootstrap.min';
 import 'ace-builds/src-min-noconflict/ace';
 import 'ace-builds/src-min-noconflict/theme-eclipse';
 import 'brace/mode/xml';
+import 'brace/mode/text';
 
 // jsTree
 import 'jstree/dist/jstree.min';

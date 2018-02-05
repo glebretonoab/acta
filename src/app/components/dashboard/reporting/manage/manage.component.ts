@@ -24,9 +24,9 @@ export class ReportingManageComponent implements AfterViewInit {
 
     // Datatables
     jQuery('.dataTable-complete-1').DataTable({
-      dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
-        "<'row'<'col-sm-12'tr>>" +
-        "<'row'<'col-sm-5'p><'col-sm-7'B>>",
+      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
+        '<\'row\'<\'col-sm-12\'tr>>' +
+        '<\'row\'<\'col-sm-5\'p><\'col-sm-7\'B>>',
       buttons: [
         'selectAll',
         'selectNone',
@@ -59,9 +59,9 @@ export class ReportingManageComponent implements AfterViewInit {
     });
 
     jQuery('.dataTable-complete-2').DataTable({
-      dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
-        "<'row'<'col-sm-12'tr>>" +
-        "<'row'<'col-sm-5'p><'col-sm-7'B>>",
+      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
+        '<\'row\'<\'col-sm-12\'tr>>' +
+        '<\'row\'<\'col-sm-5\'p><\'col-sm-7\'B>>',
       buttons: [
         'selectAll',
         'selectNone',
@@ -77,16 +77,16 @@ export class ReportingManageComponent implements AfterViewInit {
     });
 
     jQuery('.dataTable-complete-4').DataTable({
-      dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
-        "<'row'<'col-sm-12'tr>>" +
-        "<'row'<'col-sm-5'p>>",
+      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
+        '<\'row\'<\'col-sm-12\'tr>>' +
+        '<\'row\'<\'col-sm-5\'p>>',
       select: false
     });
 
     jQuery('.dataTable-complete-add-to-reporting').DataTable({
-      dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
-           "<'row'<'col-sm-12'tr>>" +
-           "<'row'<'col-sm-5 text-left'p><'col-sm-7'B>>",
+      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
+        '<\'row\'<\'col-sm-12\'tr>>' +
+        '<\'row\'<\'col-sm-5\'p><\'col-sm-7\'B>>',
       columnDefs: [{
         orderable: false,
         className: 'select-checkbox',

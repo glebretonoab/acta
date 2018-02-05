@@ -24,9 +24,9 @@ export class CatalogManageComponent implements AfterViewInit {
 
     // Datatables
     jQuery('.dataTable-complete-3').DataTable({
-      dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
-        "<'row'<'col-sm-12'tr>>" +
-        "<'row'<'col-sm-5'p><'col-sm-7'B>>",
+      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
+        '<\'row\'<\'col-sm-12\'tr>>' +
+        '<\'row\'<\'col-sm-5\'p><\'col-sm-7\'B>>',
       buttons: [
         'selectAll',
         'selectNone',
@@ -48,34 +48,34 @@ export class CatalogManageComponent implements AfterViewInit {
       rowGroup: {
         dataSrc: 3
       },
-      "columnDefs": [
+      columnDefs: [
         { 
           visible: false, 
-          "targets": [3]
+          targets: [3]
         }
       ]
     });
 
     jQuery('.dataTable-complete-4').DataTable({
-      dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
-        "<'row'<'col-sm-12'tr>>" +
-        "<'row'<'col-sm-5'p>>",
+      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
+        '<\'row\'<\'col-sm-12\'tr>>' +
+        '<\'row\'<\'col-sm-5\'p>>',
       select: false,
       rowGroup: {
         dataSrc: 3
       },
-      "columnDefs": [
+      columnDefs: [
         { 
           visible: false, 
-          "targets": [3]
+          targets: [3]
         }
       ]
     });
 
     jQuery('.dataTable-complete-add-to-catalog').DataTable({
-      dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
-           "<'row'<'col-sm-12'tr>>" +
-           "<'row'<'col-sm-5 text-left'p><'col-sm-7'B>>",
+      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
+           '<\'row\'<\'col-sm-12\'tr>>' +
+           '<\'row\'<\'col-sm-5 text-left\'p><\'col-sm-7\'B>>',
       columnDefs: [{
         orderable: false,
         className: 'select-checkbox',

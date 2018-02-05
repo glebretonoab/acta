@@ -1,0 +1,69 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h3 class="acta-title">Edit configuration files</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#tab_1" id="tab_1_link" data-toggle="tab">
+                        <i class="fa fa-folder-o"></i> Configuration folder map</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_1">
+                    <div class="col-md-3">
+                        <div id="jstree_demo_div">
+                            <ul>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>ALE_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>ALE_versions.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>All_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>All_versions.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>Asterisk_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>Asterisk_versions.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>DRA_TEST_2_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>DRA_TEST_2_versions.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>DRA_TEST_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>DRA_TEST_versions.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>Genesys_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>Genesys_versions.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>list_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>Mitel_MV5000_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>Mitel_MV5000_versions.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>OAB_test_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>OAB_test_versions.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>ShoreTel_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>ShoreTel_versions.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>Transverse_numbers.conf</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>Transverse_versions.conf</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="editor_div" class="editor">
+                            <div class="filepath">
+                                <label>
+                                    <i class="fa fa-file-code-o"></i>Path
+                                </label>
+                                <div class="path">
+                                    /usr/acta/200/
+                                    <span></span>
+                                </div>
+                                <a href="javascript:" class="close_config">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                                <div style="clear:left"></div>
+                            </div>
+                            <div ace-editor [(text)]="textEditor" [mode]="'text'" [theme]="'eclipse'" [options]="options" [readOnly]="true" [autoUpdateContent]="true"
+                                [durationBeforeCallback]="1000" (textChanged)="onChange($event)" style="min-height: 500px; width:100%; overflow: auto;"></div>
+                        </div>
+                    </div>
+                    <div style="clear:left"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

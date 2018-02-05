@@ -2,6 +2,22 @@
     .content {
         .dataTable {
             width: 100% !important;
+
+            &.dataTable-tree {
+                tbody td {
+                    padding: 0px 8px !important;
+                    line-height: 19px;
+
+                    img {
+                        vertical-align: top;
+                    }
+
+                    .progress {
+                        margin-top: 2px !important;
+                    }
+                }
+            }
+
             a {
                 text-decoration: underline;
             }

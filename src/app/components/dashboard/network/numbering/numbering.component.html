@@ -1,269 +1,117 @@
 <div class="row">
     <div class="col-sm-12">
-        <h3 class="acta-title">Launch script</h3>
+        <h3 class="acta-title">Numbering plan</h3>
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-12">
-        <div class="nav-tabs-custom">
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a href="#tab_1" id="tab_1_link" data-toggle="tab">
-                        <i class="fa fa-th-list"></i> Scripts list</a>
-                </li>
-                <li>
-                    <a href="#tab_2" id="tab_2_link" data-toggle="tab">
-                        <i class="fa fa-code"></i> Launch script</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="tab_1">
-                    <div class="box box-filter box-default">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">
-                                <i class="fa fa-filter" aria-hidden="true"></i> Filters</h3>
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <form role="form" class="form">
-                                <div class="form-group col-sm-3">
-                                    <label>Contributor</label>
-                                    <select class="form-control select2" data-placeholder="Select your contributor">
-                                        <option selected="selected">ALE</option>
-                                        <option>All</option>
-                                        <option>Asterik</option>
-                                        <option>Genesys</option>
-                                        <option>Mitel MV5000</option>
-                                        <option>ShoreTel</option>
-                                        <option>Transverse</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-sm-3">
-                                    <label>Catalog</label>
-                                    <select class="form-control select2" data-placeholder="Select your catalog">
-                                        <option value="" disabled selected>Select your catalog</option>
-                                        <option>[ALE] Out of dialog</option>
-                                        <option>[ALE] Every Major Release</option>
-                                        <option>[ALE] Every 2 Major Release</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label>Options</label>
-                                    <div style="clear: left"></div>
-                                    <a href="#" class="btn btn-default btn-with-icon">
-                                        <i class="fa fa-code"></i> Launch ALE auto_reply
-                                    </a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- /. filters -->
-
-                    <div class="box box-default box-datatable">
-                        <div class="box-body">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <table id="example1" class="table table-bordered table-striped dataTable dataTable-complete dataTable-complete-1" role="grid"
-                                        aria-describedby="example1_info">
-                                        <thead>
-                                            <tr role="row">
-                                                <th width="40px">ID</th>
-                                                <th>File name</th>
-                                                <th>Description</th>
-                                                <th></th>
-                                                <th width="50px">CallFlow</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1 text-center">
-                                                    <a href="javascript:" class="launchscript">
-                                                        <span class="badge">21400</span>
-                                                    </a>
-                                                </td>
-                                                <td>21400_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
-                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
-                                                <td>Out of dialog</td>
-                                                <td class="text-center">
-                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
-                                                        <i class="fa fa-info-circle"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="even">
-                                                <td class="sorting_1 text-center">
-                                                    <a href="javascript:" class="launchscript">
-                                                        <span class="badge">21401</span>
-                                                    </a>
-                                                </td>
-                                                <td>21401_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
-                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
-                                                <td>Out of dialog</td>
-                                                <td class="text-center">
-                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
-                                                        <i class="fa fa-info-circle"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1 text-center">
-                                                    <a href="javascript:" class="launchscript">
-                                                        <span class="badge">21402</span>
-                                                    </a>
-                                                </td>
-                                                <td>21402_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
-                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
-                                                <td>Out of dialog</td>
-                                                <td class="text-center">
-                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
-                                                        <i class="fa fa-info-circle"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1 text-center">
-                                                    <a href="javascript:" class="launchscript">
-                                                        <span class="badge">21403</span>
-                                                    </a>
-                                                </td>
-                                                <td>21400_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
-                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
-                                                <td>Out of dialog</td>
-                                                <td class="text-center">
-                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
-                                                        <i class="fa fa-info-circle"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="even">
-                                                <td class="sorting_1  text-center">
-                                                    <a href="javascript:" class="launchscript">
-                                                        <span class="badge">21404</span>
-                                                    </a>
-                                                </td>
-                                                <td>21401_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
-                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
-                                                <td>Out of dialog</td>
-                                                <td class="text-center">
-                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
-                                                        <i class="fa fa-info-circle"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1 text-center">
-                                                    <a href="javascript:" class="launchscript">
-                                                        <span class="badge">21405</span>
-                                                    </a>
-                                                </td>
-                                                <td>21402_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
-                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
-                                                <td>Out of dialog</td>
-                                                <td class="text-center">
-                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
-                                                        <i class="fa fa-info-circle"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="even">
-                                                <td class="sorting_1  text-center">
-                                                    <a href="javascript:" class="launchscript">
-                                                        <span class="badge">21406</span>
-                                                    </a>
-                                                </td>
-                                                <td>21401_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
-                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
-                                                <td>Every Major Release</td>
-                                                <td class="text-center">
-                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
-                                                        <i class="fa fa-info-circle"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1 text-center">
-                                                    <a href="javascript:" class="launchscript">
-                                                        <span class="badge">21407</span>
-                                                    </a>
-                                                </td>
-                                                <td>21402_OOD01_incoming_out_of_dialog_OPTIONS.xml</td>
-                                                <td>ACTa receives OPTIONS message and responds by 200 OK</td>
-                                                <td>Every Major Release</td>
-                                                <td class="text-center">
-                                                    <button type="button" class="callflow" data-toggle="popover" data-placement="left" title="CallFlow" data-content="IPBX . . . . . > . ACTa : OPTIONS<br/><ul><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li><li>IPBX . < . . . . . ACTa : 200 OK</li></ul>">
-                                                        <i class="fa fa-info-circle"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>File name</th>
-                                                <th>Description</th>
-                                                <th></th>
-                                                <th>CallFlow</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /. datatable -->
-                <!-- /.tab-pane -->
-                <div class="tab-pane" id="tab_2">
-                    <div class="col-sm-5">
-                        <form class="form form-horizontal">
-                            <div class="form-group">
-                                <label for="inputEmail3" class="col-sm-3 control-label">Script ID</label>
-                                <div class="col-sm-9">
-                                    <input type="text" value="21400" class="form-control number" id="inputEmail3" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-3 control-label">ACTA :</label>
-                                <div class="col-sm-9">
-                                    <select class="form-control select2" data-placeholder="Select your contributor">
-                                        <option selected="selected">ACTA_ShoteTel</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-3 control-label">ACTA Number :</label>
-                                <div class="col-sm-9">
-                                    <select class="form-control select2" data-placeholder="Select your contributor">
-                                        <option selected="selected">ACTA1 = 0299381809</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-3 control-label">IPBX version :</label>
-                                <div class="col-sm-9">
-                                    <select class="form-control select2" data-placeholder="Select your contributor">
-                                        <option selected="selected">6.0.3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-9">
-                                    <button type="submit" class="btn btn-default">Launch</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div style="clear: left"></div>
+        <div class="box box-filter box-default top-20">
+            <div class="box-header with-border">
+                <h3 class="box-title">
+                    <i class="fa fa-filter" aria-hidden="true"></i> Filters</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
                 </div>
             </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="col-sm-10">
+                    <form role="form" class="form-inline">
+                        <div class="form-group">
+                            <label>IPBX</label>
+                            <select class="form-control select2" data-placeholder="Select your contributor">
+                                <option>All</option>
+                                <option selected="selected">ACTA_ALE</option>
+                                <option>IPBX_ALE</option>
+                                <option>ACTA_Asterisk</option>
+                                <option>IPBX_Asterisk</option>
+                                <option>ACTA_DRA_TEST</option>
+                                <option>IPBX_DRA_TEST</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
 
+                <div class="col-sm-2 text-right">
+                    <a [routerLink]="['../configuration']" routerLinkActive="active" class="btn btn-default btn-with-icon">
+                        <i class="fa fa-edit" aria-hidden="true"></i> Edit configuration
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- /.tab-content -->
+        <!-- /. filters -->
+
+        <div class="box box-default box-datatable">
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="example1" class="table table-bordered table-striped dataTable dataTable-complete dataTable-complete-1" role="grid"
+                            aria-describedby="example1_info">
+                            <thead>
+                                <tr role="row">
+                                    <th>Description</th>
+                                    <th>Phone number</th>
+                                    <th width="50px">Config</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr role="row" class="odd">
+                                    <td>HQ319_ALcatel_ACTA</td>
+                                    <td>0299000001</td>
+                                    <td class="text-center">
+                                        <a href="javascript:" class="edit_config">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>HQ319_Alcatel_ACTA_FORK</td>
+                                    <td>0299000001_0299000002</td>
+                                    <td class="text-center">
+                                        <a href="javascript:" class="edit_config">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>auto_reply</td>
+                                    <td>0000</td>
+                                    <td class="text-center">
+                                        <a href="javascript:" class="edit_config">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="editor_div" class="editor">
+                        <div class="filepath">
+                            <label>
+                                <i class="fa fa-file-code-o"></i>Path
+                            </label>
+                            <div class="path">
+                                /usr/acta/scripts/ACTA_ALE/0299000001_service.conf
+                                <span></span>
+                            </div>
+                            <a href="javascript:" class="close_config">
+                                <i class="fa fa-times"></i>
+                            </a>
+                            <div style="clear:left"></div>
+                        </div>
+                        <div ace-editor [(text)]="textEditor" [mode]="'text'" [theme]="'eclipse'" [options]="options" [autoUpdateContent]="true"
+                            [durationBeforeCallback]="1000" (textChanged)="onChange($event)" style="min-height: 500px; width:100%; overflow: auto;"></div>
+                        <div class="col-md-12 text-right">
+                            <a href="javascript:" class="close_config btn btn-default">
+                                <i class="fa fa-check"></i> Save config
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
