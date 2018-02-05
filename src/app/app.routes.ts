@@ -11,6 +11,7 @@ import { AnalysisComponent } from './components/dashboard/tests/analysis/analysi
 import { ViewComponent } from './components/dashboard/scripts/view/view.component';
 import { CatalogManageComponent } from './components/dashboard/catalogs/manage/manage.component';
 import { ReportingManageComponent } from './components/dashboard/reporting/manage/manage.component';
+import { NumberingComponent } from './components/dashboard/network/numbering/numbering.component';
 
 export const ROUTES: Routes = [
   {
@@ -25,7 +26,8 @@ export const ROUTES: Routes = [
       { path: 'tests/analysis', component: AnalysisComponent },
       { path: 'scripts/view', component: ViewComponent },
       { path: 'catalogs/manage', component: CatalogManageComponent },
-      { path: 'reporting/manage', component: ReportingManageComponent } 
+      { path: 'reporting/manage', component: ReportingManageComponent },
+      { path: 'network/numbering', component: NumberingComponent }
     ]
   },
   { path: '', component: LoginComponent }

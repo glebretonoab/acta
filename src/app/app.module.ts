@@ -25,6 +25,7 @@ import { AnalysisComponent } from './components/dashboard/tests/analysis/analysi
 import { ViewComponent } from './components/dashboard/scripts/view/view.component';
 import { CatalogManageComponent } from './components/dashboard/catalogs/manage/manage.component';
 import { ReportingManageComponent } from './components/dashboard/reporting/manage/manage.component';
+import { NumberingComponent } from './components/dashboard/network/numbering/numbering.component';
 
 // Services
 import { StatusService } from './services/status.service';
@@ -48,7 +49,8 @@ import { StatusService } from './services/status.service';
     AnalysisComponent,
     ViewComponent,
     CatalogManageComponent,
-    ReportingManageComponent
+    ReportingManageComponent,
+    NumberingComponent
   ],
   providers: [
     Configuration,
