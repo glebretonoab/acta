@@ -26,8 +26,13 @@ import { ViewComponent } from './components/dashboard/scripts/view/view.componen
 import { CatalogManageComponent } from './components/dashboard/catalogs/manage/manage.component';
 import { ReportingManageComponent } from './components/dashboard/reporting/manage/manage.component';
 import { NumberingComponent } from './components/dashboard/network/numbering/numbering.component';
+import { NetworkStatusComponent } from './components/dashboard/network/status/status.component';
+import { ArchitectureComponent } from './components/dashboard/network/architecture/architecture.component';
 import { ConfigurationComponent } from './components/dashboard/network/configuration/configuration.component';
 import { ServerStatusComponent } from './components/dashboard/admin/server/status.component';
+import { EditConfigurationComponent } from './components/dashboard/admin/edit/configuration.component';
+import { UsersManageComponent } from './components/dashboard/admin/users/manage.component';
+import { ContributorsManageComponent } from './components/dashboard/admin/contributors/manage.component';
 
 // Services
 import { StatusService } from './services/status.service';
@@ -37,7 +42,7 @@ import { StatusService } from './services/status.service';
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true }),
-    BrowserAnimationsModule,
+    //BrowserAnimationsModule,
     AceEditorModule
   ],
   declarations: [
@@ -53,8 +58,13 @@ import { StatusService } from './services/status.service';
     CatalogManageComponent,
     ReportingManageComponent,
     NumberingComponent,
+    NetworkStatusComponent,
+    ArchitectureComponent,
     ConfigurationComponent,
-    ServerStatusComponent
+    ServerStatusComponent,
+    EditConfigurationComponent,
+    UsersManageComponent,
+    ContributorsManageComponent
   ],
   providers: [
     Configuration,

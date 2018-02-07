@@ -34,8 +34,11 @@
             }
         }
         .form-new {
+            &.form-new-ligth {
+                border-left: 5px solid #1485cc;
+            }
+            
             background-color: #fdfdfd;
-            border-left: 5px solid #1485cc;
             margin-bottom: 20px;
             padding: 10px 5px 0 5px;
             .form-group {
@@ -56,17 +59,13 @@
                 font-weight: 600;
                 color: red;
             }
-
             &.form-info-light {
                 padding: 0 0;
-
                 .form-group {
                     margin-bottom: 5px;
-
                     &:first-child {
                         margin-top: 10px;
                     }
-
                     &:last-child {
                         margin-bottom: 10px;
                     }
@@ -81,22 +80,19 @@
                         color: #1e282c;
                         font-weight: bold;
                     }
-
                     .select2 {
                         width: 50% !important;
                     }
                 }
-
                 label {
                     text-align: left;
                     font-weight: normal;
                     padding: 2px 5px;
                 }
-
-                label, span.info {
+                label,
+                span.info {
                     line-height: 1;
                 }
-
                 span.info {
                     padding: 2px 15px;
                 }

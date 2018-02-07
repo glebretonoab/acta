@@ -12,8 +12,13 @@ import { ViewComponent } from './components/dashboard/scripts/view/view.componen
 import { CatalogManageComponent } from './components/dashboard/catalogs/manage/manage.component';
 import { ReportingManageComponent } from './components/dashboard/reporting/manage/manage.component';
 import { NumberingComponent } from './components/dashboard/network/numbering/numbering.component';
+import { NetworkStatusComponent } from './components/dashboard/network/status/status.component';
+import { ArchitectureComponent } from './components/dashboard/network/architecture/architecture.component';
 import { ConfigurationComponent } from './components/dashboard/network/configuration/configuration.component';
 import { ServerStatusComponent } from './components/dashboard/admin/server/status.component';
+import { EditConfigurationComponent } from './components/dashboard/admin/edit/configuration.component';
+import { UsersManageComponent } from './components/dashboard/admin/users/manage.component';
+import { ContributorsManageComponent } from './components/dashboard/admin/contributors/manage.component';
 
 export const ROUTES: Routes = [
   {
@@ -31,7 +36,12 @@ export const ROUTES: Routes = [
       { path: 'reporting/manage', component: ReportingManageComponent },
       { path: 'network/numbering', component: NumberingComponent },
       { path: 'network/configuration', component: ConfigurationComponent },
-      { path: 'admin/serverstatus', component: ServerStatusComponent }
+      { path: 'network/status', component: NetworkStatusComponent },
+      { path: 'network/architecture', component: ArchitectureComponent },
+      { path: 'admin/serverstatus', component: ServerStatusComponent },
+      { path: 'admin/configuration', component: EditConfigurationComponent },
+      { path: 'admin/users', component: UsersManageComponent },
+      { path: 'admin/contributors', component: ContributorsManageComponent }
 
     ]
   },

@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h3 class="acta-title">Edit configuration files</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#tab_1" id="tab_1_link" data-toggle="tab">
+                        <i class="fa fa-folder-o"></i> Configuration folder map</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_1">
+                    <div class="col-md-3">
+                        <div id="jstree_demo_div">
+                            <ul>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>contact_info.cfg</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>contact_info_contrib.cfg</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>contact_info_orange.cfg</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>list_ipbx.cfg</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>list_versions.cfg</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>network_info.cfg</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>no_numbers.cfg</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>no_versions.cfg</li>
+                                <li data-jstree='{"icon":"fa fa-file-code-o"}'>probe_info.cfg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="editor_div" class="editor">
+                            <div class="filepath">
+                                <label>
+                                    <i class="fa fa-file-code-o"></i>Path
+                                </label>
+                                <div class="path">
+                                    /usr/acta/200/
+                                    <span></span>
+                                </div>
+                                <a href="javascript:" class="close_config">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                                <div style="clear:left"></div>
+                            </div>
+                            <div ace-editor [(text)]="textEditor" [mode]="'text'" [theme]="'eclipse'" [options]="options" [readOnly]="true" [autoUpdateContent]="true"
+                                [durationBeforeCallback]="1000" (textChanged)="onChange($event)" style="min-height: 500px; width:100%; overflow: auto;"></div>
+                        </div>
+                    </div>
+                    <div style="clear:left"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

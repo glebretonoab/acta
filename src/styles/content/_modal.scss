@@ -1,0 +1,17 @@
+.skin-acta {
+    .content {
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: $screen-sm-min) {
+            .modal-lg {
+                width: 90% !important;
+            }
+        }
+
+        // Custom
+        @media (min-width: 1354px) {
+            .modal-lg {
+                width: 1354px !important;
+            } 
+        }
+    }
+}
