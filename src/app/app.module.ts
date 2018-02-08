@@ -25,6 +25,7 @@ import { AnalysisComponent } from './components/dashboard/tests/analysis/analysi
 import { ViewComponent } from './components/dashboard/scripts/view/view.component';
 import { CatalogManageComponent } from './components/dashboard/catalogs/manage/manage.component';
 import { ReportingManageComponent } from './components/dashboard/reporting/manage/manage.component';
+import { BatchManageComponent } from './components/dashboard/batch/manage/manage.component';
 import { NumberingComponent } from './components/dashboard/network/numbering/numbering.component';
 import { NetworkStatusComponent } from './components/dashboard/network/status/status.component';
 import { ArchitectureComponent } from './components/dashboard/network/architecture/architecture.component';
@@ -57,6 +58,7 @@ import { StatusService } from './services/status.service';
     ViewComponent,
     CatalogManageComponent,
     ReportingManageComponent,
+    BatchManageComponent,
     NumberingComponent,
     NetworkStatusComponent,
     ArchitectureComponent,

@@ -56,6 +56,17 @@
                                 background-color: #ffa500;
                             }
                         }
+
+                        a.details-control {
+                            width: 50px;
+                            &.btn-below-down { display: block; }
+                            &.btn-below-up { display: none; }
+                        }
+                    }
+
+                    &.shown a.details-control {
+                        &.btn-below-down { display: none; }
+                        &.btn-below-up { display: block; }
                     }
                 }
             }

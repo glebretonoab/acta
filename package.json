@@ -37,7 +37,7 @@
     "datatables.net-select": "^1.2.4",
     "datatables.net-select-dt": "^1.2.4",
     "express": "^4.16.2",
-    "extract-text-webpack-plugin": "^2.1.2",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^0.11.2",
     "hammerjs": "^2.0.8",
     "heroku-cli": "^6.15.18",
