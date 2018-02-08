@@ -44,7 +44,7 @@ export class AnalysisComponent implements AfterViewInit {
     });
 
     jQuery('.dataTable-complete-1 tbody').on('click', 'a.details-control', function () {
-      var tr = $(this).closest('tr');
+      var tr = jQuery(this).closest('tr');
       var row = table.row( tr );
 
       if ( row.child.isShown() ) {
