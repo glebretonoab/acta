@@ -1,6 +1,6 @@
 .skin-acta {
     .main-sidebar {
-        background-color: #f1f0f0;
+        background-color: $sidebar_background;
         padding-top: 70px;
 
         .user-panel {
@@ -31,29 +31,36 @@
             }
         }
 
-        .sidebar-menu>li {
-            &.header {
-                color: #4b646f;
-                background: #1a2226;
-            }
-            >a {
-                border-left: 3px solid transparent;
-                i {
-                    color: $administrator_color;
+        .sidebar-menu {
+            >li {
+                &.header {
+                    color: $sidebar_header_color;
+                    background: $sidebar_header_background;
                 }
-            }
-            &:hover>a,
-            &.active>a,
-            &.menu-open>a {
-                color: #ffffff;
-                background: #1e282c;
-            }
-            &.active>a {
-                border-left-color: #ff3333;
-            }
-            >.treeview-menu {
-                margin: 0 1px;
-                background-color: white;
+                >a {
+                    border-left: 3px solid transparent;
+                    i {
+                        color: $sidebar_active_element_color;
+                    }
+                }
+                &:hover>a,
+                &.active>a,
+                &.menu-open >a {
+                    color: #ffffff;
+                    background: $sidebar_active_element_background;
+                }
+                &.active >a {
+                    border-left-color: $sidebar_active_element_border;
+                    background-color: $sidebar_active_element_background;
+
+                    i {
+                        color: $sidebar_active_element_color;
+                    }
+                }
+                >.treeview-menu {
+                    margin: 0 1px;
+                    background-color: white;
+                }
             }
         }
         .sidebar a {
@@ -67,7 +74,7 @@
                 background-color: #e8e5e5;
             }
             >a {
-                color: #2a323c;
+                color: $sidebar_active_element_background;
             }
             &.active>a,
             >a:hover {

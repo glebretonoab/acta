@@ -12,7 +12,7 @@
     // Color by status
     .wrapper {
         &.wrapper-adm {
-            @include status-color($administrator_color);
+            @include status-color($administrator_color);  
         }
         &.wrapper-sup {
             @include status-color($supervisor_color);

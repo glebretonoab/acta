@@ -7,6 +7,10 @@
             .progress-bar {
                 border-radius: 0;
                 line-height: 14px;
+
+                &.progress-bar-yellow {
+                    background-color: $content_progress_bar_background;
+                }
             }
         }
     }

@@ -6,7 +6,7 @@
             border: none;
             box-shadow: none;
             >.panel-heading {
-                background-color: #4a83a1;
+                background-color: $content_panel_header_background;
                 color: white;
             }
             .panel-body {

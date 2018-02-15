@@ -5,22 +5,22 @@
             box-shadow: none;
             &.btn-default {
                 background-color: white;
-                color: #1485cc;
-                border: 1px solid #1485cc;
+                color: $content_button_color;
+                border: 1px solid $content_button_color;
                 &:hover {
-                    background-color: #1485cc;
+                    background-color: $content_button_color;
                     color: white;
                 }
             }
             &.btn-below {
                 background-color: white;
-                color: #1485cc;
-                border: 1px solid #1485cc;
+                color: $content_button_color;
+                border: 1px solid $content_button_color;
                 padding: 0 10px;
                 line-height: 0;
 
                 &:hover {
-                    background-color: #1485cc;
+                    background-color: $content_button_color;
                     color: white;
                 }
 
@@ -52,15 +52,15 @@
                 }
             }
             &.btn-filter {
-                background-color: #1485cc;
+                background-color: $content_button_color;
                 color: white;
-                border: 1px solid #1485cc;
+                border: 1px solid $content_button_color;
                 padding: 3px 12px;
             }
             &.btn-modal-ok {
-                background-color: #1485cc;
+                background-color: $content_button_color;
                 color: white;
-                border: 1px solid #1485cc;
+                border: 1px solid $content_button_color;
             }
             &.btn-modal-close {
                 background-color: white;
@@ -69,15 +69,14 @@
                 border: 1px solid #898e91;
             }
             &.btn-modal-yes {
-                background-color: #4eba4c;
+                background-color: $content_modal_btn_yes;
                 color: white;
-                border: 1px solid #4eba4c;
+                border: 1px solid $content_modal_btn_yes;
             }
             &.btn-modal-no {
                 background-color: white;
-                border: 1px solid $administrator_color;
-                color: $administrator_color;
-                border: 1px solid $administrator_color;
+                border: 1px solid $content_modal_btn_no;
+                color: $content_modal_btn_no; 
             }
         }
     }

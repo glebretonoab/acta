@@ -75,27 +75,16 @@ export class BatchManageComponent implements AfterViewInit {
     jQuery('.dataTable-complete-4').DataTable({
       dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
         '<\'row\'<\'col-sm-12\'tr>>' +
-        '<\'row\'<\'col-sm-5\'p>>',
-      select: false
-    });
-
-    jQuery('.dataTable-complete-add-to-reporting').DataTable({
-      dom: '<\'row\'<\'col-sm-6\'l><\'col-sm-6\'f>>' +
-        '<\'row\'<\'col-sm-12\'tr>>' +
-        '<\'row\'<\'col-sm-5\'p><\'col-sm-7\'B>>',
-      columnDefs: [{
-        orderable: false,
-        className: 'select-checkbox',
-        targets: 0
-      }],
-      select: {
-        style: 'os',
-        selector: 'td:first-child'
+        '<\'row\'<\'col-sm-12\'p>>',
+      select: true,
+      rowGroup: {
+        dataSrc: 3
       },
-      order: [[1, 'asc']],
-      buttons: [
-        'selectAll',
-        'selectNone'
+      columnDefs: [
+        { 
+          visible: false, 
+          targets: [3]
+        }
       ]
     });
 
@@ -108,7 +97,7 @@ export class BatchManageComponent implements AfterViewInit {
     jQuery('.add-script').click(function () {
       var target = jQuery('#scripts_target');
       var script = jQuery(this).closest('tr').find('td:nth-child(2)').html();
-      target.append('<p><a class="delete-script" href="javascript:"><i class="fa fa-minus-circle" aria-hidden="true"></i></a> ' + script + '</p>');
+      target.append('<div class="script_inject"><p><a class="delete-script" href="javascript:"><i class="fa fa-minus-circle" aria-hidden="true"></i></a> ' + script + '</p><textarea placeholder="Test description" class="col-sm-10 form-control"></textarea><div style="clear: left"></div></div>');
     });
 
     jQuery('.delete-script').click(function () {

@@ -18,7 +18,7 @@
         background-color: white;
 
         .content-header {
-            background: #f1f0f0;
+            background: $content_header_background;
             padding: 15px 25px;
             .sidebar-toggle {
                 background-color: #ff3333;
@@ -34,7 +34,7 @@
                 }
             }
             h1 {
-                color: #2a323c;
+                color: $content_header_color;
                 margin: 0 0 0 40px;
                 font-size: 22px;
                 small {
@@ -51,8 +51,7 @@
                 top: 0;
                 right: 0;
                 width: 210px;
-                background-color: #ebeaea;
-                border-left: 1px solid #b1b1b1;
+                background-color: $content_header_service_background;
                 height: 100%;
                 .server-status-icon,
                 .server-status-name {
@@ -62,15 +61,15 @@
                     position: absolute;
                     top: 9px;
                     i {
-                        color: $server_status_color;
-                        font-size: 38px;
+                        color: $content_header_service_status;
+                        font-size: 38px; 
                     }
                 }
                 .server-status-name {
                     line-height: 1;
                     position: absolute;
                     left: 65px;
-                    color: #2a323c;
+                    color: $content_header_service_color;
                     p {
                         margin: 0 0 5px 0;
                         font-weight: 600;
@@ -82,7 +81,7 @@
                             font-weight: normal;
                         }
                         span {
-                            color: $server_status_color;
+                            color: $content_header_service_status;
                             text-transform: uppercase;
                         }
                     }
@@ -105,6 +104,7 @@
                             height: 75px;
                             width: 75px;
                             line-height: 75px;
+                            background-color: $content_home_infobox_background !important;
                             i {
                                 font-size: 45px;
                                 margin-top: 15px;
@@ -139,11 +139,11 @@
                             .box-body {
                                 a.how-to-use {
                                     font-weight: bold;
-                                    color: #333;
+                                    color: $content_home_link_color;
                                     padding-left: 38px;
                                     &:hover {
                                         span {
-                                            color: $supervisor_color;
+                                            color: $content_home_link_icon_color;
                                         }
                                     }
                                     i {
@@ -151,7 +151,7 @@
                                         position: absolute;
                                         margin-left: -30px;
                                         margin-top: -3px;
-                                        color: $supervisor_color;
+                                        color: $content_home_link_icon_color;
                                     }
                                     span {
                                         text-decoration: underline;
@@ -176,11 +176,11 @@
                                     top: 50%;
                                     z-index: 5;
                                     display: inline-block;
-                                    border: 2px solid #1485cc;
+                                    border: 2px solid $content_carrousel_arrows_color;
                                     border-radius: 50%;
                                     padding: 6px;
                                     margin-top: -6px;
-                                    color: #1485cc;
+                                    color: $content_carrousel_arrows_border;
                                     text-shadow: none;
                                     font-size: 29px;
                                     opacity: 1;

@@ -38,11 +38,6 @@ export class AnalysisComponent implements AfterViewInit {
       placement: 'right'
     });
 
-    // Event
-    jQuery('.invite').click(function () {
-      jQuery('#tab_2_link').tab('show');
-    });
-
     jQuery('.dataTable-complete-1 tbody').on('click', 'a.details-control', function () {
       var tr = jQuery(this).closest('tr');
       var row = table.row( tr );

@@ -20,33 +20,14 @@
 	}
 }
 
+@mixin opacity($value){
+	$IEValue: $value*100;
+	opacity: $value;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+	filter: alpha(opacity=$IEValue);
+  }
+
 @mixin status-color($color) {
-	.main-header {
-		.navbar-custom-menu {
-			.navbar-nav {
-				a.exit {
-					color: $color;
-				}
-			}
-		}
-	}
-	.sidebar-menu {
-		>li.active {
-			>a {
-				border-left-color: $color;
-				i {
-					color: $color;
-				}
-			}
-		}
-		>li {
-			>a {
-				i {
-					color: $color;
-				}
-			}
-		}
-	}
 	.user-panel {
 		background-color: $color;
 	}
@@ -67,10 +48,6 @@
 
 					.info-box {
 						background-color: #f9f9f9;
-						
-						.info-box-icon {
-							background-color: $color !important;
-						}
 
 						.info-box-content {
 							padding: 12px 10px;
@@ -80,18 +57,6 @@
 
 				.box-acta {
 					border-top-color: $color;
-				}
-			}
-
-			h3.acta-title {
-				border-left: 8px solid $color;
-			}
-
-			.nav-tabs-custom {
-				>.nav-tabs {
-					>li.active {
-						border-top: 4px solid $color;
-					}
 				}
 			}
 		}

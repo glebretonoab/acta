@@ -36,7 +36,7 @@ app-acta:empty + .loading .visual .spinner {
 }
 
 .spinner > div {
-  background-color: #1e282c;
+  background-color: #000;
   height: 100%;
   width: 6px;
   display: inline-block;
@@ -47,11 +47,11 @@ app-acta:empty + .loading .visual .spinner {
 }
 
 .spinner .rect1, .spinner .rect2 {
-  background-color: #ff3333;
+  background-color: #F16E00;
 }
 
 .spinner .rect4, .spinner .rect5 {
-  background-color: #1485cc;
+  background-color: #b9b9b9;
 }
 
 .spinner .rect2 {

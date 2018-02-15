@@ -73,8 +73,8 @@
             tr.group td {
                 font-weight: 600;
                 background-color: white;
-                border: 1px solid #1485cc !important;
-                color: #1485cc;
+                border: 1px solid $content_datatable_group_color !important;
+                color: $content_datatable_group_color;
             }
         }
     }

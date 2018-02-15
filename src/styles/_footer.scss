@@ -1,21 +1,28 @@
 .skin-acta {
     .main-footer {
-        padding: 10px 15px;
+        /*padding: 10px 15px;*/
+        padding: 0;
+        height: 45px;
+        border-top: none;
+        background-color: $footer_background;
+
         .logo {
             margin-right: 10px;
+            width: 45px;
+            height: 100%;
         }
         a.top {
-            height: 58px;
-            background-color: #f9f9f9;
+            height: 45px;
+            background-color: $footer_button_background;
             position: absolute;
             bottom: 0;
             right: 0;
             padding: 0 15px;
 
             i {
-                margin-top: 12px; 
+                margin-top: 11px; 
                 font-size: 30px;
-                color: #1e282c;
+                color: $footer_button_color;
             }
         }
     }

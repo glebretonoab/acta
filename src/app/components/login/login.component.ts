@@ -6,6 +6,7 @@ import { Configuration } from '../../app.configuration';
 
 @Component({
   selector: 'login',
+  host: {'class': 'login'},
   templateUrl: './login.component.html',
   styles: [require('./login.component.scss').toString()]
 })

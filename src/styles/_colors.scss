@@ -1,9 +1,212 @@
 // _colors.scss
-//$administrator_color: #ff3333;
+
+$theme: orange !default;
+
+// Status
 $administrator_color: #e74c3c;
 $supervisor_color: #1485cc;
 $contributor_color: #f5a029;
 
-$server_status_color: #4eba4c;
+// Signin
+$signin_container_background: white;
+$signin_button_submit_background: #1e282c;
+$signin_button_submit_background_hover: #1e282c;
 
-$blue_color: #1485cc;
+// Logo
+$logo_first_color: $administrator_color;
+$logo_second_color: $supervisor_color;
+$logo_third_color: #b9b9b9;
+$logo_image_src: '../images/logo-acta-icon.png';
+
+// Header 
+$header_background: #1e282c;
+$header_btn: #ff3333;
+
+// Sidebar
+$sidebar_background: #f1f0f0;
+$sidebar_header_color: #4b646f;
+$sidebar_header_background: #1a2226;
+$sidebar_active_element_background: #1e282c;
+$sidebar_active_element_color: #e74c3c;
+$sidebar_active_element_border: #e74c3c;
+
+// --- Content ---
+// Dashboard
+$content_header_color: #2a323c;
+$content_header_background: #f1f0f0;
+$content_header_service_color: #2a323c;
+$content_header_service_status: #51be86;
+$content_header_service_background: #ebeaea;
+
+// Home
+$content_home_infobox_background: $administrator_color;
+$content_home_link_color: #333;
+$content_home_link_icon_color: $supervisor_color;
+
+// Carrousel
+$content_carrousel_arrows_color: $supervisor_color;
+$content_carrousel_arrows_border: $supervisor_color;
+
+// Title
+$content_title_border: $administrator_color;
+$content_sub_title_color: $supervisor_color;
+
+// Button
+$content_button_color: $supervisor_color;
+$content_button_callflow: #f5a73a;
+
+// Datatable
+$content_datatable_badge_color: $supervisor_color;
+$content_datatable_group_color: $supervisor_color;
+$content_datatable_paginate_color: $supervisor_color;
+$content_datatable_buttons_color: $supervisor_color;
+
+// Navtabs
+$content_navtabs_active_border: $administrator_color;
+
+// Treview
+$content_treeview_icon_color: $supervisor_color;
+$content_treeview_path_border: $supervisor_color;
+$content_treeview_path_background: $supervisor_color;
+
+// Box
+$content_box_header_background: $supervisor_color;
+
+// Progress bar
+$content_progress_bar_background: #f39c12;
+
+// Form
+$content_form_ligth_border: $supervisor_color;
+
+// Icons
+$content_icon_fa_ok: #4eba4c;
+
+// Tooltip
+$content_tooltip_background: $supervisor_color;
+
+// Popover
+$content_popover_color: $supervisor_color;
+
+// Panel
+$content_panel_header_background: #4a83a1;
+
+// Modal
+$content_modal_btn_yes: #4eba4c;
+$content_modal_btn_no: $administrator_color;
+
+// --- End Content --- */
+
+// Footer 
+$footer_background: white;
+$footer_button_background: #f9f9f9;
+$footer_button_color: #1e282c; 
+
+
+
+// ---- Orange theme ----
+@if $theme == orange {
+
+    // Status
+    $administrator_color: #e74c3c;
+    $supervisor_color: #4ab4e6;
+    $contributor_color: #f5a029;
+
+    // Orange branding
+    $orange_first_color: #F16E00;
+    $orange_second_color: #000000;
+    $orange_third_color: white;
+
+    // Signin
+    $signin_container_background: #1a1a1a;
+    $signin_button_submit_background: #b9b9b9;
+    $signin_button_submit_background_hover: $orange_first_color;
+
+    // Logo
+    $logo_first_color: $orange_first_color;
+    $logo_second_color: white;
+    $logo_third_color: #b9b9b9;
+    $logo_image_src: '../images/logo-acta-icon-orange.png';
+
+    // header
+    $header_background: $orange_second_color;
+    $header_btn: $orange_first_color;
+
+    // Sidebar
+    $sidebar_background: #f6f6f6;
+    $sidebar_header_color: $orange_third_color;
+    $sidebar_header_background: #9e9e9e;
+    $sidebar_active_element_background: $orange_second_color;
+    $sidebar_active_element_color: $orange_first_color;
+    $sidebar_active_element_border: $orange_first_color;
+
+    // --- Content ---
+    // Dashboard
+    $content_header_color: $orange_second_color;
+    $content_header_background: #f6f6f6;
+    $content_header_service_color: $orange_second_color;
+    $content_header_service_status: white;
+    $content_header_service_background: #51be86;
+
+    // Home
+    $content_home_infobox_background: $orange_first_color;
+    $content_home_link_color: $orange_second_color;
+    $content_home_link_icon_color: $orange_first_color;
+
+    // Carrousel
+    $content_carrousel_arrows_color: $orange_first_color;
+    $content_carrousel_arrows_border: $orange_second_color;
+
+    // Title
+    $content_title_border: $orange_first_color;
+    $content_sub_title_color: $orange_first_color;
+
+    // Button
+    $content_button_color: $orange_first_color;
+    $content_button_callflow: $orange_first_color;
+
+    // Datatable
+    $content_datatable_badge_color: $orange_first_color;
+    $content_datatable_group_color: $orange_second_color;
+    $content_datatable_paginate_color: $orange_second_color;
+    $content_datatable_buttons_color: $orange_first_color;
+
+    // Navtabs
+    $content_navtabs_active_border: $orange_second_color;
+
+    // Treview
+    $content_treeview_icon_color: $orange_first_color;
+    $content_treeview_path_border: $orange_first_color;
+    $content_treeview_path_background: $orange_first_color;
+
+    // Box
+    $content_box_header_background: $orange_second_color;
+
+    // Progress bar
+    $content_progress_bar_background: $orange_first_color;
+
+    // Form
+    $content_form_ligth_border: $orange_second_color;
+
+    // Icons
+    $content_icon_fa_ok: $orange_first_color;
+
+    // Tooltip
+    $content_tooltip_background: $orange_first_color;
+
+    // Popover
+    $content_popover_color: $orange_first_color;
+
+    // Panel
+    $content_panel_header_background: $orange_second_color;
+
+    // Modal
+    $content_modal_btn_yes: #51be86;
+    $content_modal_btn_no: $orange_second_color;
+
+    // --- End Content --- */
+
+    // Footer 
+    $footer_background: #f1f0f0;
+    $footer_button_background: #9e9e9e; 
+    $footer_button_color: white; 
+}

@@ -3,14 +3,14 @@
     div.dt-buttons {
         float: right;
         button.dt-button {
-            border: 1px solid #1485cc;
+            border: 1px solid $content_datatable_buttons_color;
             background-color: white;
             background-image: none;
-            color: #1485cc;
+            color: $content_datatable_buttons_color;
             border-radius: 0;
             padding: 0.4em 1em;
             &:active:not(.disabled):hover:not(.disabled) {
-                background-color: #1485cc;
+                background-color: $content_datatable_buttons_color;
                 color: white;
                 box-shadow: none;
                 text-shadow: none;
@@ -70,19 +70,19 @@
             border: none;
             background: transparent;
             i {
-                color: #f5a73a;
+                color: $content_button_callflow;
                 font-size: 20px;
-                border: 1px solid white;
+                border: 1px solid lightgrey;
                 border-radius: 50%;
             }
         }
         span.badge {
-            background: #1485cc;
+            background: $content_datatable_badge_color;
             border-radius: 5px;
         }
         .popover {
             border-radius: 0;
-            border: 2px solid #1485cc;
+            border: 2px solid $content_popover_color;
             box-shadow: none;
             max-width: 350px;
             .popover-title {
@@ -146,8 +146,8 @@
             >.active>span,
             >.active>span:focus,
             >.active>span:hover {
-                background-color: #1485cc;
-                border-color: #1485cc;
+                background-color: $content_datatable_paginate_color;
+                border-color: $content_datatable_paginate_color;
             }
         }
     }
@@ -184,11 +184,11 @@
             color: #e0a602;
         }
         i.fa-file-code-o {
-            color: #1485cc;
+            color: $content_treeview_icon_color;
         }
         &.jstree-default .jstree-clicked {
             background: white;
-            border: 1px solid #1485cc;
+            border: 1px solid $content_treeview_icon_color;
             border-radius: 0;
             font-weight: 600;
             box-shadow: none;
@@ -197,7 +197,7 @@
     .editor {
         display: none;
         .filepath {
-            border: 1px solid #1485cc;
+            border: 1px solid $content_treeview_path_border;
             margin-bottom: 10px;
             label,
             .path {
@@ -210,7 +210,7 @@
             }
             label {
                 margin-bottom: 0;
-                background-color: #1485cc;
+                background-color: $content_treeview_path_background;
                 color: white;
                 font-weight: normal;
                 i {
@@ -219,7 +219,7 @@
             }
             .close_config {
                 float: right;
-                background: red;
+                background: $content_treeview_icon_color;
                 color: white;
             }
         }

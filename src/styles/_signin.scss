@@ -1,19 +1,54 @@
 .skin-acta {
-    .login-box {
-        width: 615px;
-        background: url('../images/login-background.png') no-repeat;
-        min-height: 169px;
-        padding-left: 143px;
-        padding-top: 75px;
-        margin: 10% auto;
-
-        .login-box-body {
-            background: none;
-
-            .btn-submit {
-                background-color: #1e282c;
-                text-transform: uppercase;
+    .login {
+        .login-container {
+            width: 100%;
+            @if $theme == orange {
+                background: $signin_container_background url('../images/logo-illustration-background.png') calc(50% - 205px) -10px no-repeat;
+                border-bottom: 30px solid #f6f6f6;
             }
+            margin-top: 10%;
+            padding: 20px 0;
+        
+            .login-box {
+                width: 615px;
+                @if $theme == orange {
+                    background: url('../images/login-background-orange.png') no-repeat;
+                } @else {
+                    background: url('../images/login-background.png') no-repeat;
+                }
+                min-height: 230px;
+                padding-left: 143px;
+                padding-top: 75px;
+                margin: 0 auto;
+                position: relative;
+
+                .login-box-body {
+                    background: none;
+
+                    .btn-submit {
+                        background-color: $signin_button_submit_background_hover;
+                        border-color: $signin_button_submit_background_hover;
+                        border-radius: 2px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .orangebrand {
+            @if $theme == orange {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            } @else {
+                display: none;
+            }    
         }
     }
 }

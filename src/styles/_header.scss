@@ -9,7 +9,7 @@
     }
 
     .main-header {
-        background-color: #1e282c;
+        background-color: $header_background;
         .navbar {
             .nav {
                 >li>a {
@@ -52,11 +52,11 @@
             height: 70px;
             width: 670px;
             position: relative;
-            background: url(../images/logo-acta-icon.png) 17px 11px no-repeat;
+            background: url($logo_image_src) 17px 11px no-repeat;
             padding: 15px 0 0 105px;
             .firstelement {
                 font-family: 'Orbitron', sans-serif;
-                color: $administrator_color;
+                color: $logo_first_color;
                 font-weight: 700;
                 font-size: 29px;
                 text-transform: uppercase;
@@ -66,12 +66,12 @@
                 font-family: 'Raleway', sans-serif;
             }
             .secondelement {
-                color: #1485cc;
+                color: $logo_second_color;
                 font-size: 18px;
                 margin-left: 10px;
             }
             .thirdelement {
-                color: #b9b9b9;
+                color: $logo_third_color;
                 font-size: 11px;
                 margin-left: 55px;
             }
@@ -80,9 +80,10 @@
             background-color: #3c8dbc;
         }
         .navbar-custom-menu {
-            padding-right: 5px;
+            
             .navbar-nav {
-                margin: 17px 0;
+                /*margin: 17px 0;*/
+
                 a {
                     border: 2px solid rgba(255, 255, 255, 0.5);
                     height: 36px;
@@ -91,19 +92,25 @@
                     text-align: center;
                     line-height: 38px !important;
                     border-radius: 50%;
-                    margin-right: 10px;
+                    margin: 17px 10px 17px 0;
                     &:hover {
                         border: 2px solid white;
                     }
                     &.exit {
-                        color: #ff3333;
+                        color: $header_btn;
+                        margin-right: 15px;
                         &:hover {
-                            color: #ff3333;
+                            color: $header_btn;
                         }
                     }
                     i {
                         font-size: 16px !important;
                     }
+                }
+
+                img.orangelogo {
+                    width: 70px;
+                    height: 70px;
                 }
             }
         }
